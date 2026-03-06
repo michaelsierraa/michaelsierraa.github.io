@@ -1,0 +1,72 @@
+/* ============================================================
+   Custom palette — Michael Sierra-Arévalo
+   Ethereal Ivory  #E4E4DE  — page background
+   Sophisticated Sage #C4C5BA — surfaces, nav bg
+   Eerie Black     #1B1B1B  — primary text
+   Muted Moss      #595f39  — links, accents, headings
+   ============================================================ */
+
+:root {
+  --color-bg:      #E4E4DE;
+  --color-surface: #C4C5BA;
+  --color-text:    #1B1B1B;
+  --color-accent:  #595f39;
+}
+
+/* Background & text */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Links */
+a,
+a:visited {
+  color: var(--color-accent);
+}
+a:hover,
+a:focus {
+  color: var(--color-accent);
+  opacity: 0.8;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-accent);
+}
+
+/* Navigation background */
+.navbar,
+header {
+  background-color: var(--color-surface) !important;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-outline-primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+/* Cards / surface elements */
+.card,
+.section-bg {
+  background-color: var(--color-surface);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+footer a,
+footer a:visited {
+  color: var(--color-surface);
+}
