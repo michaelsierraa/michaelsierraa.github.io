@@ -1,0 +1,79 @@
+{{ define "main" }}
+<section class="section media-page">
+  <div class="container py-5">
+    <h1 class="mb-4 d-flex align-items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437"/></svg>
+      Media
+    </h1>
+
+    {{ $media := site.Data.media }}
+
+    <ul class="nav nav-tabs mb-4" id="mediaTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tv-tab"
+                data-bs-toggle="tab" data-bs-target="#tab-tv"
+                type="button" role="tab"
+                aria-controls="tab-tv" aria-selected="true">
+          Television &amp; Film
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="podcast-tab"
+                data-bs-toggle="tab" data-bs-target="#tab-podcast"
+                type="button" role="tab"
+                aria-controls="tab-podcast" aria-selected="false">
+          Podcast &amp; Radio
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="press-tab"
+                data-bs-toggle="tab" data-bs-target="#tab-press"
+                type="button" role="tab"
+                aria-controls="tab-press" aria-selected="false">
+          Press
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="mediaTabContent">
+
+      {{ $tvItems := where $media "category" "tv_film" }}
+      <div class="tab-pane fade show active" id="tab-tv" role="tabpanel" aria-labelledby="tv-tab">
+        <ul class="media-list list-unstyled">
+          {{ range $tvItems }}
+          <li class="media-item mb-3 pb-3 border-bottom">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>.
+            <em>{{ .outlet }}</em>{{ with .date }}, {{ substr . 0 4 }}{{ end }}.
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      {{ $podcastItems := where $media "category" "podcast_radio" }}
+      <div class="tab-pane fade" id="tab-podcast" role="tabpanel" aria-labelledby="podcast-tab">
+        <ul class="media-list list-unstyled">
+          {{ range $podcastItems }}
+          <li class="media-item mb-3 pb-3 border-bottom">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>.
+            <em>{{ .outlet }}</em>{{ with .date }}, {{ substr . 0 4 }}{{ end }}.
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      {{ $pressItems := where $media "category" "press" }}
+      <div class="tab-pane fade" id="tab-press" role="tabpanel" aria-labelledby="press-tab">
+        <ul class="media-list list-unstyled">
+          {{ range $pressItems }}
+          <li class="media-item mb-3 pb-3 border-bottom">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>.
+            <em>{{ .outlet }}</em>{{ with .date }}, {{ substr . 0 4 }}{{ end }}.
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

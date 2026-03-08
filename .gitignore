@@ -2,6 +2,13 @@ public/
 resources/
 node_modules/
 .hugo_build.lock
+hugo_stats.json
+
+# CV working files — not for public serving or version control
+_cv-source/
+
+# macOS metadata — never commit
+.DS_Store
 
 # Local Claude and session files — never committed
 CLAUDE.md

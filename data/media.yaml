@@ -1,0 +1,659 @@
+# Media appearances data — all entries sourced directly from CV (March 2026)
+# Categories: tv_film, podcast_radio, press
+
+# ─── TELEVISION & FILM ───────────────────────────────────────────────────────
+
+- category: tv_film
+  label: "Television & Film"
+  title: "Trigger Points: Guns, Policing, and the Global Reach of Violence"
+  outlet: "C-SPAN"
+  date: "2024-11-17"
+  url: "https://www.c-span.org/program/public-affairs-event/2024-texas-book-festival-michael-sierra-arvalo-and-ieva-jusionyte/651892"
+
+- category: tv_film
+  title: "Mass Shooting Nation"
+  outlet: "Vice News"
+  date: "2024-02"
+  url: "https://www.imdb.com/title/tt30851154/"
+
+- category: tv_film
+  title: "Community response to APD/DPS partnership suspension"
+  outlet: "CBS Austin"
+  date: "2023-07-12"
+  url: "https://cbsaustin.com/news/local/community-response-to-apddps-partnership-suspension"
+
+- category: tv_film
+  title: "Memo from APD shows decreases in response time, emergency service calls but data still missing"
+  outlet: "CBS Austin"
+  date: "2023-07-05"
+  url: "https://cbsaustin.com/news/local/report-from-apd-shows-decreases-in-response-time-emergency-service-calls-but-data-still-missing"
+
+- category: tv_film
+  title: "'I kill [Black people] for a living' | A look at SDPD's newly released misconduct files"
+  outlet: "CBS8"
+  date: "2023-02-03"
+  url: "https://www.cbs8.com/article/news/investigations/sdpds-struggle-with-racial-discrimination/509-346f24be-a75e-4e90-b073-8fb1e19473ca"
+
+- category: tv_film
+  title: "What the Uvalde Shooting Tells Us About Policing"
+  outlet: "Rise Up With Sonali"
+  date: "2022-05-21"
+  url: "https://vimeo.com/715732042"
+
+- category: tv_film
+  title: "Experts discuss City of Austin's search for new police chief"
+  outlet: "KVUE ABC"
+  date: "2021-03-23"
+  url: "https://www.kvue.com/article/news/local/austin-city-new-police-chief-search-experts-discuss/269-a21fb83e-2e27-4710-bb50-c93f5517001a"
+
+- category: tv_film
+  title: "FOX 7 Discussion: Violent crime increases in large Texas cities"
+  outlet: "FOX 7 Austin"
+  date: "2020-12-23"
+  url: "https://www.fox7austin.com/video/883493"
+
+- category: tv_film
+  title: "In-depth: UT researcher says shootings against police officers aren't 'increasing markedly over time'"
+  outlet: "KXAN Austin"
+  date: "2020-08-17"
+  url: "https://www.kxan.com/news/local/austin/in-depth-ut-researcher-says-shooting-against-police-officers-arent-increasing-markedly-over-time/"
+
+- category: tv_film
+  title: "'Everyone should care': Sociologists weigh in on 'Black on Black' violence after 9-year-old killed"
+  outlet: "FOX 8"
+  date: "2020-07"
+  url: "https://www.fox8live.com/2020/07/14/everyone-should-care-sociologists-weigh-black-black-violence-after-year-old-killed/"
+
+# ─── PODCAST & RADIO ─────────────────────────────────────────────────────────
+
+- category: podcast_radio
+  label: "Podcast & Radio"
+  title: "Stolen Valor in Rogan's Manosphere"
+  outlet: "Left Reckoning Podcast"
+  date: "2025-10-08"
+  url: "https://youtu.be/H4C7iWUZ7Xw?t=3846"
+
+- category: podcast_radio
+  title: "'The truth was enough': Tim Kennedy and the politics of storytelling"
+  outlet: "Texas Standard"
+  date: "2025-10-07"
+  url: "https://www.texasstandard.org/stories/tim-kennedy-resume-inaccuracies-veteran-mma-fighter/"
+
+- category: podcast_radio
+  title: "The Danger Imperative"
+  outlet: "A Moment with Erik Fleming"
+  date: "2024-08-19"
+  url: "https://open.spotify.com/episode/0vDld1pjHLU89s9z1pEaby?si=qFtV6FWTRTCsOmZ1qJTIuA"
+
+- category: podcast_radio
+  title: "How Police Guns End Up in the Hands of Criminals"
+  outlet: "Reveal Podcast"
+  date: "2024-07-13"
+  url: "https://revealnews.org/podcast/how-police-guns-end-up-in-the-hands-of-criminals/"
+
+- category: podcast_radio
+  title: "Episode 238: Danger and Violence in Policing"
+  outlet: "Everyday Injustice Podcast"
+  date: "2024-06-03"
+  url: "https://soundcloud.com/davisvanguard/everyday-injustice-podcast-episode-238-michael-sierra-arevalo-danger-and-violence-in-policing"
+
+- category: podcast_radio
+  title: "The Danger Imperative"
+  outlet: "Left Reckoning Podcast"
+  date: "2024-04-28"
+  url: "https://youtu.be/L1EkoGm7gNE"
+
+- category: podcast_radio
+  title: "The Danger Imperative: How the 'War on Cops' Shapes Violent Police Culture"
+  outlet: "Green & Red Podcast"
+  date: "2024-04-15"
+  url: "https://www.youtube.com/watch?v=vObXXMT5vEA"
+
+- category: podcast_radio
+  title: "The Danger Imperative"
+  outlet: "Profs on Cops Podcast"
+  date: "2024-03-30"
+  url: "https://open.spotify.com/episode/2N7gOaOhUPhwD6BVMJQVfY?si=jy3b9ZaGTuuVeod8iuswQA"
+
+- category: podcast_radio
+  title: "Inside 'The Danger Imperative'"
+  outlet: "Unsolicited Perspectives Podcast"
+  date: "2024-03-26"
+  url: "https://youtu.be/XiESoXcH1Wo"
+
+- category: podcast_radio
+  title: "How Do We Make Policing Safer in the United States?"
+  outlet: "The Conversation with Al McFarlane"
+  date: "2024-02-28"
+  url: "https://www.youtube.com/watch?v=PbYlLVVZqs0"
+
+- category: podcast_radio
+  title: "The Danger Imperative: Violence, Death, and the Soul of Policing"
+  outlet: "Public Defenseless Podcast"
+  date: "2024-02-27"
+  url: "https://www.publicdefenseless.com/episodes/4l8cpb3n9r56tkz-364fg-b9cd4-dzcr9-7mcag-2fa4m-m8e7r-yrngw-hnmw8-rfjsd-wrswf-bdpw8-85gy8-822rt-j9je6-z87m5-sb7zy-dnhnt-saw8g-7464e-tsjw5-gx436-8aw9w-5egsw-kf368"
+
+- category: podcast_radio
+  title: "Police: Heroes or Villains? A Conversation with Michael Sierra-Arévalo"
+  outlet: "The Politics Girl Podcast"
+  date: "2024-02-27"
+  url: "https://podcasts.apple.com/us/podcast/police-heroes-or-villains-a-conversation-with/id1595408601?i=1000647199900"
+
+- category: podcast_radio
+  title: "The TRUE DANGER IN Policing Is Being EXPOSED!"
+  outlet: "Social Society with Brandon Clark"
+  date: "2024-02-15"
+  url: "https://www.youtube.com/watch?v=JpSoDGJV_cw"
+
+- category: podcast_radio
+  title: "Michael Sierra-Arévalo"
+  outlet: "Wake Up With WURD with Solomon Jones, 96.1FM"
+  date: "2024-02-13"
+  url: "https://soundcloud.com/onwurd/wake-up-with-wurd-w-solomon-jones-21324-michael-sierra-arevalo"
+
+- category: podcast_radio
+  title: "The Danger Imperative: Unmasking the Dilemmas of Modern Policing"
+  outlet: "The Darrell McClain Show"
+  date: "2024-01-16"
+  url: "https://thedarrellmcclainshow.buzzsprout.com/951727/14313233-the-danger-imperative-unmasking-the-dilemmas-of-modern-policing-with-michael-sierra-arevalo"
+
+- category: podcast_radio
+  title: "What Are Police Thinking?"
+  outlet: "What Next: Slate"
+  date: "2021-04-19"
+  url: "https://slate.com/news-and-politics/2021/04/police-violence-shootings-culture-fear-adam-toledo-daunte-wright.html"
+
+- category: podcast_radio
+  title: "Murder"
+  outlet: "You're Wrong About Podcast"
+  date: "2020-07-27"
+  url: "https://www.iheart.com/podcast/1270-youre-wrong-about-49764960/episode/murder-68966461/"
+
+- category: podcast_radio
+  title: "Sociologist Michael Sierra-Arévalo on Why Police Expect Danger and How it Drives Brutality"
+  outlet: "On Point: NPR"
+  date: "2020-07-16"
+  url: "https://www.wbur.org/onpoint/2020/07/16/sociologist-michael-sierra-arevalo-on-how-police-expectation-of-danger-drives-brutality"
+
+- category: podcast_radio
+  title: "What Changes to Policing in America Would Address Concerns of Protesters?"
+  outlet: "Top of Mind with Julie Rose, BYU Radio"
+  date: "2020-06-03"
+  url: "http://www.byuradio.org/episode/509024fa-dcc5-4c69-a3b7-f19c8b251eed/top-of-mind-with-julie-rose-police-force-antarctica-forest-impostures"
+
+- category: podcast_radio
+  title: "Policing and Violence Prevention"
+  outlet: "Untenured Tracks Podcast"
+  date: "2020-02-17"
+  url: "https://untenuredtracks.podbean.com/e/e21-policing-violence-prevention-w-dr-michael-sierra-arevalo/"
+
+- category: podcast_radio
+  title: "Community Policing"
+  outlet: "WSHU Public Radio"
+  date: "2019-10-03"
+  url: "https://www.wshu.org/post/community-policing"
+
+- category: podcast_radio
+  title: "Community Interaction Increases Trust in Police"
+  outlet: "Top of Mind with Julie Rose, BYU Radio / Sirius XM 143"
+  date: "2019-10-01"
+  url: "http://www.byuradio.org/episode/6c50b09f-5fed-4137-8142-9f8cacb79201/top-of-mind-with-julie-rose-china-national-day-community-policing-wild-bird-populations?autoplay=true&playhead=949"
+
+- category: podcast_radio
+  title: "'Focused Deterrence' Helping to Curb Gun Violence among New Haven Gangs"
+  outlet: "WNPR"
+  date: "2015-10-23"
+  url: "http://wnpr.org/post/focused-deterrence-helping-curb-gun-violence-among-new-haven-gangs"
+
+# ─── PRESS INTERVIEWS ────────────────────────────────────────────────────────
+
+- category: press
+  label: "Press"
+  title: "How a DHS shooting of a third U.S. citizen went unnoticed for months"
+  outlet: "Washington Post"
+  date: "2026-03-05"
+  url: "https://www.washingtonpost.com/immigration/2026/03/05/texas-dhs-shooting-citizen-killed/"
+
+- category: press
+  title: "Dallas Leaders Step Up Efforts to Curb Teen Violence"
+  outlet: "Governing"
+  date: "2025-08-26"
+  url: "https://www.governing.com/urban/dallas-leaders-step-up-efforts-to-curb-teen-violence"
+
+- category: press
+  title: "Why do ICE agents wear masks and how it's eroding public confidence in some communities"
+  outlet: "El Paso Times"
+  date: "2025-06-30"
+  url: "https://www.elpasotimes.com/story/news/immigration/2025/06/30/ice-agents-wearing-masks-in-immigration-arrests-raids-raise-concerns/84325788007/"
+
+- category: press
+  title: "Several Law Enforcement Agencies Have Stopped Reselling Guns"
+  outlet: "The Trace"
+  date: "2025-03-19"
+  url: "https://www.thetrace.org/2025/03/police-used-gun-resale-policies-crime/"
+
+- category: press
+  title: "What are 'challenge coins'? These LMPD versions go from mundane to controversial"
+  outlet: "Louisville Courier Journal"
+  date: "2024-12-27"
+  url: "https://www.courier-journal.com/story/news/local/2024/12/27/challenge-coins-created-for-louisville-metro-police-department/76502372007/"
+
+- category: press
+  title: "Army veteran killed by Texas police after high-speed chase was shot 25 times, autopsy shows"
+  outlet: "Stars and Stripes"
+  date: "2024-11-06"
+  url: "https://www.stripes.com/veterans/2024-11-06/army-veteran-texas-police-shooting-death-15761270.html"
+
+- category: press
+  title: "3 Former Officers Acquitted of Most Serious Charge in Tyre Nichols's Death"
+  outlet: "The New York Times"
+  date: "2024-10-03"
+  url: "https://www.nytimes.com/2024/10/03/us/tyre-nichols-verdict.html"
+
+- category: press
+  title: "Man burned alive during SWAT arrest sues Hays County, San Marcos"
+  outlet: "KXAN Austin"
+  date: "2024-10-06"
+  url: "https://www.kxan.com/investigations/man-nearly-burned-alive-during-swat-arrest-sues-hays-county-san-marcos/"
+
+- category: press
+  title: "Why doesn't the Austin Police Department publish yearly reports on the crimes it solves?"
+  outlet: "KUT News Austin"
+  date: "2024-09-10"
+  url: "https://www.kut.org/crime-justice/2024-09-10/austin-tx-police-department-clearance-rates-crime-rate"
+
+- category: press
+  title: "How Police Guns End Up in the Hands of Criminals"
+  outlet: "Reveal, Center for Investigative Journalism"
+  date: "2024-07-13"
+  url: "https://revealnews.org/podcast/how-police-guns-end-up-in-the-hands-of-criminals/"
+
+- category: press
+  title: "Chesterfield Police hired company accused of 'pseudoscience' to analyze deadly shooting of Charles Byers"
+  outlet: "CBS6 News Richmond"
+  date: "2024-07-02"
+  url: "https://www.wtvr.com/news/local-news/chesterfield-police-force-science-charles-byers-july-2024"
+
+- category: press
+  title: "Why has policing of US campus protests gone so wrong?"
+  outlet: "Times Higher Education"
+  date: "2024-05-15"
+  url: "https://www.timeshighereducation.com/news/why-has-policing-us-campus-protests-gone-so-wrong"
+
+- category: press
+  title: "Shot by a Civilian Wielding a Police Gun"
+  outlet: "Reveal, in partnership with The Trace and CBS News"
+  date: "2024-05-16"
+  url: "https://revealnews.org/article/shot-by-a-civilian-wielding-a-police-gun/"
+
+- category: press
+  title: "How law enforcement mishandled encampment sweep at UCLA, according to experts"
+  outlet: "The Daily Bruin"
+  date: "2024-05-14"
+  url: "https://dailybruin.com/2024/05/14/how-law-enforcement-mishandled-encampment-sweep-at-ucla-according-to-experts"
+
+- category: press
+  title: "Flock Installed AI Cameras In This Small City And Claimed Crime Went Down. It Went Up."
+  outlet: "Forbes"
+  date: "2024-02-29"
+  url: "https://www.forbes.com/sites/cyrusfarivar/2024/02/29/flock-ai-cameras-may-not-reduce-crime/?sh=4b3c09c41d6d"
+
+- category: press
+  title: "How perceptions of a 'war on cops' shape police interactions with the public"
+  outlet: "Houston Matters"
+  date: "2024-02-20"
+  url: "https://www.houstonpublicmedia.org/articles/shows/houston-matters/2024/02/20/477987/how-perceptions-of-a-war-on-cops-shape-police-interactions-with-the-public/"
+
+- category: press
+  title: "Most mass shooters are men, unlike the Lakewood Church shooter. Experts explain why."
+  outlet: "Houston Chronicle"
+  date: "2024-02-14"
+  url: "https://www.houstonchronicle.com/news/houston-texas/crime/article/lakewood-church-shooting-suspect-woman-18664619.php"
+
+- category: press
+  title: "After fatal shootings, Rantoul police recommended more training. They just sent one officer to a gun range."
+  outlet: "IPM News and The Invisible Institute"
+  date: "2024-02-05"
+  url: "https://ipmnewsroom.org/rantoul-police-shootings-trainings/"
+
+- category: press
+  title: "Houston-area police dropping private trainers probed for pushing illegal, racist tactics"
+  outlet: "Houston Landing"
+  date: "2023-12-27"
+  url: "https://houstonlanding.org/street-cop-training-brazoria-katy-jersey-village-texas-city-bellaire/"
+
+- category: press
+  title: "The Ubiquity of Guns Colors Nearly Every Police Interaction. Could Gun Regulations Prevent Police Shootings?"
+  outlet: "The Trace"
+  date: "2023-11-21"
+  url: "https://www.thetrace.org/2023/11/police-shootings-gun-violence-solutions/"
+
+- category: press
+  title: "Assault weapon mass shootings on the rise in Texas"
+  outlet: "Axios"
+  date: "2023-09-25"
+  url: "https://www.axios.com/local/san-antonio/2023/09/25/assault-weapons-mass-shootings-texas"
+
+- category: press
+  title: "Blood, sweat and syrup: Why are there so many fights at Waffle House?"
+  outlet: "The Independent"
+  date: "2023-08-11"
+  url: "https://www.independent.co.uk/news/world/americas/waffle-house-fight-avengers-austin-b2332715.html"
+
+- category: press
+  title: "Policing is less deadly than it used to be, but Columbus shooting a reminder of job's dangers"
+  outlet: "The Columbus Dispatch"
+  date: "2023-07-17"
+  url: "https://www.dispatch.com/story/news/2023/07/17/even-after-columbus-officer-shooting-policing-becoming-less-dangerous/70403005007/"
+
+- category: press
+  title: "'Slap on the hand': How LMPD officers involved in egregious misconduct remain on the force"
+  outlet: "The Courier-Journal"
+  date: "2023-06-08"
+  url: "https://www.courier-journal.com/story/news/2023/06/09/police-reform-lmpd-officer-misconduct-doj-report-louisville/70297446007/"
+
+- category: press
+  title: "'Worst place to be a woman': What Madison Brooks' case exposes about Louisiana"
+  outlet: "The Advocate"
+  date: "2023-01-27"
+  url: "https://www.theadvocate.com/baton_rouge/news/crime_police/madison-brooks-louisiana/article_2c257c41-c666-54e4-8ed4-d5798e0933f8.html"
+
+- category: press
+  title: "Dallas police's murder count dropped in 2022, but the city doesn't include all slayings"
+  outlet: "Dallas Morning News"
+  date: "2023-01-12"
+  url: "https://www.dallasnews.com/news/crime/2023/01/12/dallas-polices-murder-count-dropped-in-2022-but-the-city-doesnt-include-all-slayings/"
+
+- category: press
+  title: "'National embarrassment': Multiple Maryland State Police challenge coins prompt disciplinary actions"
+  outlet: "Baltimore Sun"
+  date: "2022-11-04"
+  url: "https://www.baltimoresun.com/news/crime/bs-md-cr-police-coin-discipline-20221103-k5bdruec3zh2zkzvirj4q2eemy-story.html"
+
+- category: press
+  title: "The Danger Imperative: Reckoning with the Perception of Violent Threat in American Police Culture"
+  outlet: "Life & Letters"
+  date: "2022-05-26"
+  url: "https://lifeandletters.la.utexas.edu/2022/05/the-danger-imperative-reckoning-with-the-perception-of-violent-threat-in-american-police-culture/"
+
+- category: press
+  title: "Body Camera Footage In Dee Garrett Arrest Doesn't Match LMPD Fears Of Dangerous Crowd"
+  outlet: "LEO Weekly"
+  date: "2022-04-10"
+  url: "https://usa.firenews.video/news-other/body-camera-footage-in-dee-garrett-arrest-doesnt-match-lmpd-fears-of-dangerous-crowd/"
+
+- category: press
+  title: "The New Face of American Gun Ownership"
+  outlet: "The Cut"
+  date: "2022-02-28"
+  url: "https://www.thecut.com/2022/02/rise-of-black-female-gun-owners.html"
+
+- category: press
+  title: "Much of America wants policing to change. But these self-proclaimed experts tell officers they're doing just fine."
+  outlet: "Washington Post"
+  date: "2022-01-26"
+  url: "https://www.washingtonpost.com/national-security/2022/01/26/police-training-reform/"
+
+- category: press
+  title: "Fox News' Tomi Lahren told officers at a policing conference that prominent police killings could have been avoided if people 'would just comply'"
+  outlet: "Business Insider"
+  date: "2022-01-27"
+  url: "https://www.businessinsider.com/tomi-lahren-spoke-at-police-training-event-dismissed-reform-wapo-2022-1"
+
+- category: press
+  title: "Texas gun permit applications peaked in 2020, plummeted in 2021"
+  outlet: "Houston Chronicle"
+  date: "2022-01-01"
+  url: "https://www.houstonchronicle.com/politics/texas/article/Texas-gun-permit-applications-peaked-in-2020-16793405.php"
+
+- category: press
+  title: "America can't fix policing without fixing the country's gun problem"
+  outlet: "Vox"
+  date: "2021-11-06"
+  url: "https://www.vox.com/22740719/police-reform-gun-violence-firearms"
+
+- category: press
+  title: "Why the Gabby Petito case, but not others, has drawn so much attention"
+  outlet: "Politifact"
+  date: "2021-09-22"
+  url: "https://www.politifact.com/article/2021/sep/22/why-gabby-petito-case-not-others-has-drawn-so-much/"
+
+- category: press
+  title: "On Wednesday, Texas becomes largest state so far to enact a 'constitutional carry' gun law"
+  outlet: "San Antonio Express-News"
+  date: "2021-08-30"
+  url: "https://www.expressnews.com/news/legislature/article/On-Wednesday-Texas-becomes-largest-state-to-16423039.php"
+
+- category: press
+  title: "The Misplaced Hope of Understanding Police From the Inside"
+  outlet: "The Nation"
+  date: "2021-06-03"
+  url: "https://www.thenation.com/article/culture/tangled-up-in-blue-rosa-brooks-review/"
+
+- category: press
+  title: "Opinion: We can't reimagine safety without being clear-eyed about America's gun problem"
+  outlet: "Washington Post"
+  date: "2021-04-22"
+  url: "https://www.washingtonpost.com/opinions/2021/04/22/americas-gun-problem-cities-policing/"
+
+- category: press
+  title: "Daunte Wright's killing is tragic proof police need massive reforms. But calls for 'ending policing' are unpopular and counterproductive."
+  outlet: "Business Insider"
+  date: "2021-04-13"
+  url: "https://www.businessinsider.com/daunte-wright-kim-potter-minnesota-police-reform-abolish-defund-policing-2021-4"
+
+- category: press
+  title: "Where Chicago Shootings Go Unchecked, Owning a Gun Can Feel Like a Necessity"
+  outlet: "PBS/WTTW"
+  date: "2021-04-08"
+  url: "https://interactive.wttw.com/firsthand/gun-violence/stories/jsaron-jones"
+
+- category: press
+  title: "Gun violence spiked during pandemic, even as the deadliest mass shootings waned"
+  outlet: "Politifact"
+  date: "2021-03-23"
+  url: "https://www.politifact.com/article/2021/mar/23/gun-violence-spiked-during-pandemic-even-lethal-ma/"
+
+- category: press
+  title: "Craig skeptical whether police response to Capitol riot different than Black Lives Matter"
+  outlet: "Detroit Free Press"
+  date: "2021-01-15"
+  url: "https://www.freep.com/story/news/local/michigan/detroit/2021/01/15/detroit-police-chief-blm-capitol-riots/4160061001/"
+
+- category: press
+  title: "Black Lives Matter protests and the Capitol assault: Comparing the police response"
+  outlet: "Politifact"
+  date: "2021-01-08"
+  url: "https://www.politifact.com/article/2021/jan/08/black-lives-matter-protests-and-capitol-assault-co/"
+
+- category: press
+  title: "Austin Police Pledged to Stop Using 'Less Lethal' Rounds on Crowds. Then It Ordered Thousands More."
+  outlet: "KUT Austin / The Trace"
+  date: "2020-11-02"
+  url: "https://www.kut.org/post/austin-police-pledged-stop-using-less-lethal-rounds-crowds-then-it-ordered-thousands-more"
+
+- category: press
+  title: "Opponents Argue Cutting Police Funding Will Make Austin Less Safe. Here's What We Know."
+  outlet: "Texas Standard"
+  date: "2020-09-30"
+  url: "https://www.texasstandard.org/stories/opponents-argue-cutting-police-funding-will-make-austin-less-safe-heres-what-we-know/"
+
+- category: press
+  title: "Calls for reform bring renewed focus to community policing, but does it work?"
+  outlet: "PBS NewsHour"
+  date: "2020-09-18"
+  url: "https://www.pbs.org/newshour/politics/calls-for-reform-bring-renewed-focus-to-community-policing-but-does-it-work"
+
+- category: press
+  title: "State police uncovered more trooper payroll issues last year. This time, they kept it in-house."
+  outlet: "The Boston Globe"
+  date: "2020-09-14"
+  url: "https://www.bostonglobe.com/2020/09/14/metro/state-police-uncovered-more-trooper-payroll-issues-last-year-this-time-they-kept-it-in-house/"
+
+- category: press
+  title: "3 Boys Fatally Shot in 3 Summers. Can Durham Stop the Violence?"
+  outlet: "The News & Observer"
+  date: "2020-08-07"
+  url: "https://www.newsobserver.com/news/local/crime/article244090967.html"
+
+- category: press
+  title: "The same seven officers were involved in multiple shootings in Sacramento County"
+  outlet: "ABC 10 San Diego"
+  date: "2020-08-12"
+  url: "https://www.abc10.com/article/news/local/abc10-originals/same-seven-officers-involved-in-multiple-shootings-in-sacramento-county/103-d5ec852a-a124-4b13-bb5b-b9e2738a04d4"
+
+- category: press
+  title: "How Often are Police Shot in the Line of Duty?"
+  outlet: "The Trace"
+  date: "2020-07-22"
+  url: "https://www.thetrace.org/2020/07/guns-policing-how-many-deaths-data-statistics/"
+
+- category: press
+  title: "Don't Blame Protesters for the Rise in Violent Crime"
+  outlet: "HuffPost"
+  date: "2020-07-19"
+  url: "https://www.huffpost.com/entry/dont-blame-the-rise-in-violent-crime-on-protesters_n_5f122c8bc5b6cec246c294f3"
+
+- category: press
+  title: "We Reviewed Police Tactics in Nearly 400 Protest Videos. Here's What We Found."
+  outlet: "ProPublica"
+  date: "2020-07-16"
+  url: "https://projects.propublica.org/protest-police-tactics/"
+
+- category: press
+  title: "What the police really believe"
+  outlet: "Vox"
+  date: "2020-07-07"
+  url: "https://www.vox.com/policy-and-politics/2020/7/7/21293259/police-racism-violence-ideology-george-floyd"
+
+- category: press
+  title: "Is Police Reform a Fundamentally Flawed Idea?"
+  outlet: "FiveThirtyEight"
+  date: "2020-06-22"
+  url: "https://fivethirtyeight.com/features/is-police-reform-a-fundamentally-flawed-idea/"
+
+- category: press
+  title: "We Spent a Fortune on Police Body Cams. Why Haven't They Fixed Policing?"
+  outlet: "Fast Company"
+  date: "2020-06-17"
+  url: "https://medium.com/fast-company/we-spent-a-fortune-on-police-body-cams-why-havent-they-fixed-policing-ec2e682a9e7e"
+
+- category: press
+  title: "How Violent Police Culture Perpetuates Itself"
+  outlet: "GQ"
+  date: "2020-06-16"
+  url: "https://www.gq.com/story/how-violent-police-culture-perpetuates-itself"
+
+- category: press
+  title: "Police, Power, and the Specter of Guns"
+  outlet: "The Trace"
+  date: "2020-06-13"
+  url: "https://www.thetrace.org/2020/06/police-power-guns-george-floyd/"
+
+- category: press
+  title: "Officer Friendly: Brief Door-to-Door Visits from Police Greatly Improve Trust in Law Enforcement"
+  outlet: "Study Finds"
+  date: "2020-06-01"
+  url: "https://www.studyfinds.org/officer-friendly-brief-door-to-door-visits-from-police-greatly-improve-trust-in-law-enforcement/"
+
+- category: press
+  title: "Larry Krasner's Lonely, Radical Crusade to Solve America's Gun Problem"
+  outlet: "New Republic / The Trace"
+  date: "2020-01-28"
+  url: "https://www.thetrace.org/2020/01/larry-krasner-gun-violence-reform-philadelphia-district-attorney/"
+
+- category: press
+  title: "Community Policing and the Public's Attitudes Toward Police"
+  outlet: "Psychology Today"
+  date: "2019-12-16"
+  url: "https://www.psychologytoday.com/us/blog/definitive-dialog/201912/community-policing-and-the-public-s-attitudes-toward-police"
+
+- category: press
+  title: "Is It Time to Double Down on Community Policing?"
+  outlet: "Law360"
+  date: "2019-12-15"
+  url: "https://www.law360.com/articles/1228087"
+
+- category: press
+  title: "Yale study shows community policing improves trust among residents"
+  outlet: "New Haven Register"
+  date: "2019-09-16"
+  url: "https://www.ctinsider.com/news/nhregister/article/Yale-study-shows-community-policing-improves-14443961.php"
+
+- category: press
+  title: "MIT Sloan study links community-oriented policing to improved attitudes toward police"
+  outlet: "MIT Sloan School of Management"
+  date: "2019-09-16"
+  url: "https://mitsloan.mit.edu/press/mit-sloan-study-links-community-oriented-policing-to-improved-attitudes-toward-police"
+
+- category: press
+  title: "Study finds community-oriented policing improves attitudes toward police"
+  outlet: "Yale News"
+  date: "2019-09-16"
+  url: "https://news.yale.edu/2019/09/16/study-finds-community-oriented-policing-improves-attitudes-toward-police"
+
+- category: press
+  title: "One Positive Interaction with Police Can Enhance Trust, New Study Finds"
+  outlet: "Rutgers University News"
+  date: "2019-09-16"
+  url: "https://www.newark.rutgers.edu/news/one-positive-interaction-police-can-enhance-trust-new-study-finds"
+
+- category: press
+  title: "Body Cameras and TASERs Rake in Billions for Axon, but They're No Panacea for Police Violence"
+  outlet: "The Appeal"
+  date: "2019-06-10"
+  url: "https://theappeal.org/body-cameras-and-tasers-rake-in-billions-for-axon-but-theyre-no-panacea-for-police-violence/"
+
+- category: press
+  title: "Arms (and Minds) in 'America's Arsenal'"
+  outlet: "The Yale Herald"
+  date: "2016-11-11"
+  url: "http://yaleherald.com/news-and-features/features/arms-and-minds-in-americas-arsenal/"
+
+- category: press
+  title: "Chicago's Criminal Offenders Arm Themselves for the Same Reason Most American Gun Owners Do — They fear for their safety"
+  outlet: "The Trace"
+  date: "2016-09-27"
+  url: "https://www.thetrace.org/2016/09/chicago-criminal-offender-gun-ownership/"
+
+- category: press
+  title: "A Former Crack Dealer Explains the Danger and Appeal of Slinging Rocks in the 80s"
+  outlet: "Vice"
+  date: "2016-05-03"
+  url: "http://www.vice.com/read/a-former-crack-dealer-explains-the-danger-and-appeal-of-slinging-rocks-in-the-80s"
+
+- category: press
+  title: "What Cities can Learn from New Haven's Fight to Rein in Gang Violence: Seeking Solutions"
+  outlet: "The Plain Dealer"
+  date: "2016-03-24"
+  url: "http://www.cleveland.com/court-justice/index.ssf/2016/03/what_cleveland_can_learn_from.html"
+
+- category: press
+  title: "New Haven's Project Longevity Shows Promise in Reducing Violent Crime in the City"
+  outlet: "Yale News"
+  date: "2016-04-21"
+  url: "http://news.yale.edu/2016/04/21/new-haven-s-project-longevity-shows-promise-reducing-violent-crime-city"
+
+- category: press
+  title: "U.S. Attorney Cites Social-Science Math to Credit 'Project Longevity'"
+  outlet: "New Haven Independent"
+  date: "2015-10-26"
+  url: "http://www.newhavenindependent.org/index.php/archives/entry/math_puzzle_how_much_has/id_80567"
+
+- category: press
+  title: "Study: New Haven's Project Longevity Shows Positive Results"
+  outlet: "New Haven Register"
+  date: "2015-10-24"
+  url: "http://www.nhregister.com/article/NH/20151024/NEWS/151029727"
+
+- category: press
+  title: "Gun Deaths in U.S. Twice as High among African-Americans as Caucasians"
+  outlet: "Newsweek"
+  date: "2014-09-25"
+  url: "http://www.newsweek.com/gun-deaths-us-twice-high-among-african-americans-caucasians-273071"
+
+- category: press
+  title: "No Safe Haven"
+  outlet: "Yale Herald"
+  date: "2014-04-18"
+  url: "http://yaleherald.com/news-and-features/no-safe-haven/"

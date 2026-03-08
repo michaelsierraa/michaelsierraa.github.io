@@ -181,14 +181,18 @@ name   = "Research"
 URL    = "/research"
 weight = 3
 [[languages.en.menus.header]]
+name   = "Writing"
+URL    = "/writing"
+weight = 4
+[[languages.en.menus.header]]
 name   = "Media"
 URL    = "/media"
-weight = 4
+weight = 5
 [[languages.en.menus.header]]
 pre    = "email"
 name   = "Contact"
 URL    = "#contact"
-weight = 5
+weight = 6
 
 [[languages.en.menus.footer]]
 name   = "About"
@@ -203,10 +207,14 @@ name   = "Research"
 URL    = "/research"
 weight = 3
 [[languages.en.menus.footer]]
+name   = "Writing"
+URL    = "/writing"
+weight = 4
+[[languages.en.menus.footer]]
 name   = "Media"
 URL    = "/media"
-weight = 4
+weight = 5
 [[languages.en.menus.footer]]
 name   = "Contact"
 URL    = "#contact"
-weight = 5
+weight = 6

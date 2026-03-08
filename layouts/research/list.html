@@ -1,0 +1,164 @@
+{{ define "main" }}
+<section class="section research-page">
+  <div class="container py-5">
+    <h1 class="mb-4 d-flex align-items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+      Research
+    </h1>
+
+    {{ $pubs := site.Data.publications }}
+    {{ $projects := site.Data.projects }}
+
+    {{ $categories := slice
+      (dict "key" "article" "label" "Peer-Reviewed Articles" "id" "tab-articles")
+    }}
+
+    <ul class="nav nav-tabs mb-4" id="researchTabs" role="tablist">
+      {{/* Current Projects tab — always first */}}
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active"
+                id="tab-projects-btn"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-projects"
+                type="button" role="tab"
+                aria-controls="tab-projects"
+                aria-selected="true">
+          Current Projects
+        </button>
+      </li>
+      {{ range $categories }}
+        {{ $items := where $pubs "category" .key }}
+        {{ if $items }}
+        <li class="nav-item" role="presentation">
+          <button class="nav-link"
+                  id="{{ .id }}-btn"
+                  data-bs-toggle="tab"
+                  data-bs-target="#{{ .id }}"
+                  type="button" role="tab"
+                  aria-controls="{{ .id }}"
+                  aria-selected="false">
+            {{ .label }}
+          </button>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+
+    <div class="tab-content" id="researchTabContent">
+      {{/* Current Projects tab pane */}}
+      <div class="tab-pane fade show active"
+           id="tab-projects" role="tabpanel" aria-labelledby="tab-projects-btn">
+        <div class="row g-4">
+          {{ range $projects }}
+          <div class="col-md-6">
+            <div class="card h-100" style="border:1px solid var(--color-surface);background:var(--color-bg);">
+              <img src="/{{ .image }}" class="card-img-top" alt="{{ .title }}"
+                   style="object-fit:cover;height:200px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color:var(--color-accent);">{{ .title }}</h5>
+                <p class="card-text" style="color:var(--color-text);">{{ .description }}</p>
+                <span class="badge" style="background:var(--color-accent);color:#fff;">{{ .status }}</span>
+                {{ with .collaborators }}
+                <p class="small mt-2 mb-0" style="color:var(--color-text);">Collaborators: {{ . }}</p>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      {{ range $categories }}
+        {{ $items := where $pubs "category" .key }}
+        {{ if $items }}
+        <div class="tab-pane fade"
+             id="{{ .id }}" role="tabpanel" aria-labelledby="{{ .id }}-btn">
+
+          {{/* Collect unique tags from articles */}}
+          {{ $allTags := slice }}
+          {{ range $items }}
+            {{ range .tags }}
+              {{ if not (in $allTags .) }}
+                {{ $allTags = $allTags | append . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ $allTags = sort $allTags }}
+
+          <div class="row">
+            {{/* Sidebar */}}
+            <div class="col-12 col-md-3 col-lg-2">
+              <button class="writing-filter-toggle btn w-100 d-md-none mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#research-filter-panel"
+                      aria-expanded="false"
+                      aria-controls="research-filter-panel">
+                Filter ▾
+              </button>
+              <div class="collapse d-md-block" id="research-filter-panel">
+                <div class="writing-sidebar">
+                  <div class="sidebar-label">Topic</div>
+                  <ul class="list-unstyled sidebar-tag-list">
+                    <li><button class="filter-pill active" data-tag="">All</button></li>
+                    {{ range $allTags }}
+                    <li><button class="filter-pill" data-tag="{{ . }}">{{ . }}</button></li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {{/* Article list */}}
+            <div class="col-12 col-md-9 col-lg-10">
+              <ul class="pub-list list-unstyled" data-filter-list data-no-url>
+                {{ range $i, $item := $items }}
+                {{- $itemTags := $item.tags | default slice -}}
+                <li class="pub-item mb-3 pb-3 border-bottom" data-tags="{{ delimit $itemTags " " }}">
+                  <p class="mb-1">
+                    {{ $item.authors }}
+                    {{ if eq $item.status "forthcoming" }}(Forthcoming).{{ else }}({{ $item.year }}).{{ end }}
+                    {{ if $item.url }}<a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.title }}</a>{{ else }}{{ $item.title }}{{ end }}.
+                    <em>{{ $item.journal }}</em>{{ with $item.volume }}, {{ . }}{{ end }}{{ with $item.issue }}({{ . }}){{ end }}{{ with $item.pages }}, {{ . }}{{ end }}.
+                  </p>
+                  {{ with $item.reprint }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+                  {{ with $item.notes }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+                  {{ with $itemTags }}
+                  <div class="pub-tags mt-1">
+                    {{ range $itemTags }}
+                    <button class="writing-tag-pill pub-tag-btn" type="button" data-tag="{{ . }}">{{ . }}</button>
+                    {{ end }}
+                  </div>
+                  {{ end }}
+                  {{ with $item.abstract }}
+                  <div class="mt-1">
+                    <button class="pub-abstract-toggle"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#abstract-{{ $i }}"
+                            aria-expanded="false"
+                            aria-controls="abstract-{{ $i }}">
+                      Abstract ▾
+                    </button>
+                    <div class="collapse" id="abstract-{{ $i }}">
+                      <p class="pub-abstract mt-1 mb-0">{{ . }}</p>
+                    </div>
+                  </div>
+                  {{ end }}
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+{{- $js := resources.Get "js/publication-filter.js" | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

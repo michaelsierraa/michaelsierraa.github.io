@@ -1,0 +1,137 @@
+# Writing — Michael Sierra-Arévalo
+# Source: cv.txt (March 2026)
+# Sections: journalism, op-ed, essay, policy-brief
+# Sorted reverse-chronological by date
+
+- title: "The Green Beret Who Couldn't Shoot Straight"
+  outlet: "Texas Monthly"
+  date: "2025-10"
+  url: "https://www.texasmonthly.com/news-politics/tim-kennedy-manosphere-mma-green-beret/"
+  format: journalism
+  tags: [gun-violence, masculinity, bjj, military, politics]
+
+- title: "The link between underregulated firearms and an LAPD bullet killing a teen in a fitting room"
+  outlet: "Los Angeles Times"
+  date: "2022-01-04"
+  url: "https://www.latimes.com/opinion/story/2022-01-04/burlington-shooting-police-culture-firearms"
+  format: op-ed
+  tags: [gun-violence, officer-safety, police-culture, police-reform, politics, policy]
+
+- title: "Biden's plan to spend billions on community policing is bad policy"
+  outlet: "The Hill"
+  date: "2021-07-16"
+  url: "https://thehill.com/opinion/white-house/563276-bidens-plan-to-spend-billions-on-community-policing-is-bad-policy"
+  format: op-ed
+  tags: [policing, police-reform, violence-prevention, politics, policy]
+
+- title: "Sheepdogs and Social Workers"
+  outlet: "Ethnographic Café"
+  date: "2021"
+  url: "https://tinyurl.com/4pvmb9zw"
+  format: essay
+  tags: [police-culture, officer-safety]
+
+- title: "Police, Culture, and Inequality"
+  outlet: "Footnotes"
+  date: "2020-07"
+  url: "https://www.asanet.org/wp-content/uploads/attach/footnotes/footnotes_july-august_2020.pdf"
+  format: essay
+  tags: [officer-safety, police-culture, race, policing]
+
+- title: "US universities should invest in students, not in policing them"
+  outlet: "Times Higher Education"
+  date: "2020-06-25"
+  url: "https://www.timeshighereducation.com/opinion/us-universities-should-invest-students-not-policing-them"
+  format: op-ed
+  tags: [policing, race, police-reform, policy]
+
+- title: "Danger and \"Officer Safety\" Shape Police Socialization, Practice and Policy"
+  outlet: "Jurist"
+  date: "2020-06-24"
+  url: "https://www.jurist.org/commentary/2020/06/sierra-arevalo-police-training/"
+  format: essay
+  tags: [officer-safety, police-culture, police-reform, policy]
+
+- title: "Is armed protest by African Americans treated differently? History says yes"
+  outlet: "Washington Post"
+  date: "2020-05-21"
+  url: "https://www.washingtonpost.com/outlook/2020/05/21/is-armed-protest-by-african-americans-treated-differently-history-says-yes/"
+  format: op-ed
+  tags: [race, gun-violence, policing, politics, policy]
+
+- title: "1 single good encounter with a cop engenders a lot of trust, study finds"
+  outlet: "The Star-Ledger"
+  date: "2019-09-29"
+  url: "https://www.nj.com/opinion/2019/09/1-single-good-encounter-with-a-cop-engenders-a-lot-of-trust-study-finds.html"
+  format: op-ed
+  tags: [legitimacy, policing, race]
+
+- title: "Police and Legitimacy in Mexico City"
+  outlet: "Contexts"
+  date: "2019"
+  url: "https://doi.org/10.1177/1536504219883851"
+  format: essay
+  tags: [legitimacy, policing]
+
+- title: "Why don't cops wear seatbelts? How the demand for officer safety endangers police officers"
+  outlet: "Work in Progress"
+  date: "2017-01-05"
+  url: "https://workinprogress.oowsection.org/2017/01/05/why-dont-cops-wear-seatbelts-how-the-demand-for-officer-safety-endangers-police-officers/"
+  format: op-ed
+  tags: [officer-safety, police-culture]
+
+- title: "Broken windows is broken: Study shows that a more focused approach to tackling street violence can be more effective"
+  outlet: "USAPP – American Politics and Policy"
+  date: "2016-07-20"
+  url: "https://blogs.lse.ac.uk/usappblog/2016/07/20/broken-windows-is-broken-study-shows-that-a-more-focused-approach-to-tackling-street-violence-can-be-more-effective/"
+  format: op-ed
+  tags: [policing, gun-violence, violence-prevention, policy]
+
+- title: "The Shooting Disease: Who You Know, Where You Live"
+  outlet: "Hartford Courant"
+  date: "2015-05-31"
+  url: "https://www.courant.com/2015/05/31/the-shooting-disease-who-you-know-where-you-live/"
+  format: op-ed
+  tags: [gun-violence, social-networks]
+
+- title: "Going beyond the burning"
+  outlet: "The Conversation"
+  date: "2015-04-28"
+  url: "http://theconversation.com/baltimore-riots-the-fire-this-time-and-the-fire-last-time-and-the-time-between-40926"
+  format: essay
+  tags: [race, police-reform]
+
+- title: "'Civilizing' the fractured relationship between police and minority communities"
+  outlet: "The Conversation"
+  date: "2015-04-22"
+  url: "http://theconversation.com/civilizing-the-fractured-relationship-between-police-and-minority-communities-40061"
+  format: op-ed
+  tags: [legitimacy, race, policing, policy]
+
+- title: "The Breakdown of Broken Windows?"
+  outlet: "Lux et Data"
+  date: "2015-01-28"
+  url: "https://isps.yale.edu/news/blog/2015/01/the-breakdown-of-broken-windows"
+  format: op-ed
+  tags: [policing, police-reform, violence-prevention, policy]
+
+- title: "Forum: An opportunity to rise above fear for police, people of color"
+  outlet: "New Haven Register"
+  date: "2015-01-25"
+  url: "https://www.nhregister.com/columnist/article/Forum-An-opportunity-to-rise-above-fear-for-11353666.php"
+  format: op-ed
+  tags: [race, policing, legitimacy]
+
+- title: "How to Enhance Police Legitimacy and Reduce Gun Violence in Poor, Minority Communities"
+  outlet: "Scholars Strategy Network"
+  date: "2014-10-15"
+  url: "https://scholars.org/contribution/how-enhance-police-legitimacy-and-reduce-gun-violence-poor-minority-communities"
+  format: policy-brief
+  tags: [legitimacy, gun-violence, race, violence-prevention, social-networks, policy]
+
+- title: "How Targeted Deterrence Helps Police Reduce Gun Deaths"
+  outlet: "Scholars Strategy Network"
+  date: "2013-04-01"
+  url: "https://scholars.org/contribution/how-targeted-deterrence-helps-police-reduce-gun-deaths"
+  format: policy-brief
+  tags: [gun-violence, policing, violence-prevention, social-networks, policy]

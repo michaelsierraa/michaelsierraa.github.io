@@ -6,11 +6,19 @@
    Muted Moss      #595f39  — links, accents, headings
    ============================================================ */
 
-:root {
+:root,
+[data-bs-theme="light"] {
   --color-bg:      #E4E4DE;
   --color-surface: #C4C5BA;
   --color-text:    #1B1B1B;
   --color-accent:  #595f39;
+}
+
+[data-bs-theme="dark"] {
+  --color-bg:      #1c1e16;
+  --color-surface: #2a2e22;
+  --color-text:    #E4E4DE;
+  --color-accent:  #9db55a;
 }
 
 /* Background & text */
@@ -35,6 +43,64 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
+/* Navbar brand — MSA */
+.navbar-brand span:first-child {
+  color: var(--color-accent);
+}
+.navbar-brand span:last-child {
+  color: #E4E4DE;
+}
+
+/* Social icons — accent color in both modes */
+html .platform-links [class^="icon-"],
+html[data-bs-theme="dark"] .platform-links [class^="icon-"] {
+  color: var(--color-accent) !important;
+}
+
+/* Google Scholar icon — sized and colored to match font icons */
+.scholar-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: var(--color-accent);
+}
+.scholar-icon-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+/* Showcase — space-between layout on desktop */
+@media (min-width: 768px) {
+  .showcase-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .showcase-top {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Showcase — center actions on mobile */
+@media (max-width: 767.98px) {
+  .showcase-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Showcase tagline */
+.rad-showcase .lead {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-top: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
 /* Navigation background */
 .navbar,
 header {
@@ -55,10 +121,423 @@ header {
   color: var(--color-bg);
 }
 
+/* Download CV button — light mode: outlined style matching social icon color */
+html[data-bs-theme="light"] .rad-showcase .btn-primary {
+  background-color: var(--color-bg);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+html[data-bs-theme="light"] .rad-showcase .btn-primary:hover {
+  background-color: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-bg);
+}
+
 /* Cards / surface elements */
 .card,
 .section-bg {
   background-color: var(--color-surface);
+}
+
+/* Dark mode — Bootstrap component overrides */
+[data-bs-theme="dark"] body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+[data-bs-theme="dark"] .navbar,
+[data-bs-theme="dark"] header {
+  background-color: var(--color-surface) !important;
+}
+[data-bs-theme="dark"] .card,
+[data-bs-theme="dark"] .section-bg {
+  background-color: var(--color-surface);
+}
+[data-bs-theme="dark"] footer {
+  background-color: #111309;
+  color: var(--color-text);
+}
+[data-bs-theme="dark"] a,
+[data-bs-theme="dark"] a:visited {
+  color: var(--color-accent);
+}
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+  color: var(--color-accent);
+}
+
+/* Accordion — research page */
+.accordion-item {
+  background-color: var(--color-bg);
+  border-color: var(--color-surface);
+}
+.accordion-button {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) .badge {
+  background-color: var(--color-bg);
+  color: var(--color-accent);
+}
+.accordion-button.collapsed .badge {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+.accordion-button::after {
+  filter: none;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(10);
+}
+.accordion-body {
+  background-color: var(--color-bg);
+}
+
+/* Nav tabs — research & media pages */
+.nav-tabs {
+  border-bottom: 2px solid var(--color-surface);
+}
+.nav-tabs .nav-link {
+  color: var(--color-text);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  color: var(--color-accent);
+  border-color: var(--color-surface) var(--color-surface) transparent;
+  background-color: var(--color-surface);
+}
+.nav-tabs .nav-link.active {
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+  border-color: var(--color-surface) var(--color-surface) var(--color-bg);
+  font-weight: 600;
+}
+
+/* Remove bullets — research & media pages */
+.research-page ul,
+.research-page li,
+.media-page ul,
+.media-page li {
+  list-style: none;
+  padding-left: 0;
+}
+.research-page li::before,
+.research-page li::marker,
+.media-page li::before,
+.media-page li::marker {
+  content: none !important;
+  background: none !important;
+}
+
+/* Shared list styling — research & media pages */
+.pub-item a,
+.pub-item a:visited {
+  color: var(--color-accent) !important;
+}
+
+.pub-item,
+.media-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom-color: var(--color-surface);
+}
+.pub-item:last-child,
+.media-item:last-child {
+  border-bottom: none;
+}
+
+/* Headshot — constrain display size */
+.profile-image,
+.about__profile-picture {
+  display: flex;
+  justify-content: center;
+}
+.profile-image img,
+.about__profile-picture img,
+.section div[class*="col-"] img.image-left-overflow {
+  max-width: 450px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+}
+
+/* Mobile — shrink headshot and add spacing below it */
+@media (max-width: 767.98px) {
+  .profile-image img {
+    max-width: 260px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Reduce showcase top padding and remove forced min-height */
+  .rad-showcase {
+    padding-top: 60px !important;
+    min-height: 0 !important;
+  }
+
+  /* Scale down h1 only */
+  .rad-showcase h1.display-1 {
+    font-size: 2.25rem;
+  }
+
+  /* Tighten tagline spacing */
+  .rad-showcase .lead {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Balance spacing around CV button */
+  .showcase-bottom {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .showcase-social.mt-3 {
+    margin-top: 1rem !important;
+  }
+}
+
+/* Writing page — list and bullets */
+.writing-page ul,
+.writing-page li {
+  list-style: none;
+  padding-left: 0;
+}
+.writing-page li::before,
+.writing-page li::marker {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+.writing-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom-color: var(--color-surface);
+}
+.writing-item:last-child {
+  border-bottom: none;
+}
+
+.writing-title {
+  color: var(--color-accent);
+}
+.writing-title:hover {
+  opacity: 0.8;
+}
+
+.writing-meta {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.75;
+}
+
+/* Format badge on each item */
+.writing-format-badge {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 4px;
+  vertical-align: middle;
+  opacity: 1;
+  border: none;
+  outline: none;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+/* Topic tag pills on each item */
+.writing-tag-pill {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--color-surface);
+  color: var(--color-text);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  font-size: 0.72rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Writing sidebar filter */
+.writing-sidebar {
+  position: sticky;
+  top: 80px;
+  padding-right: 1rem;
+}
+.sidebar-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  opacity: 0.5;
+  margin-bottom: 0.4rem;
+}
+.sidebar-tag-list li {
+  margin-bottom: 0.1rem;
+}
+.filter-pill {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  padding: 0.15rem 0;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  opacity: 0.65;
+  transition: color 0.15s, opacity 0.15s;
+}
+.filter-pill:hover {
+  color: var(--color-accent);
+  opacity: 1;
+}
+.filter-pill.active {
+  color: var(--color-accent);
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Mobile filter toggle */
+.writing-filter-toggle {
+  border: 1px solid var(--color-surface);
+  color: var(--color-text);
+  background: transparent;
+  font-size: 0.875rem;
+}
+
+/* Clickable article tag pills — research page */
+.pub-tag-btn {
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.15s, color 0.15s;
+}
+.pub-tag-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+/* Abstract toggle — research page */
+.pub-abstract-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  cursor: pointer;
+  opacity: 0.8;
+}
+.pub-abstract-toggle:hover {
+  opacity: 1;
+}
+.pub-abstract {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+/* Theme toggle button icons — show only the active mode icon */
+.theme-icon-light,
+.theme-icon-dark,
+.theme-icon-auto {
+  display: none;
+}
+html[data-bs-theme="light"]:not([data-theme-auto]) .theme-icon-light { display: inline-block; }
+html[data-bs-theme="dark"]:not([data-theme-auto]) .theme-icon-dark  { display: inline-block; }
+html[data-theme-auto]                              .theme-icon-auto  { display: inline-block; }
+
+/* Book page section headings — icon + text alignment */
+.book-page h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Book page */
+/* Suppress theme pseudo-element bullets on book page lists */
+.book-page li::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+.book-cover {
+  max-width: 260px;
+  border-radius: 4px;
+}
+.book-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  opacity: 0.75;
+  font-style: italic;
+}
+.book-description p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+.book-awards {
+  font-size: 0.95rem;
+}
+.award-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 0.15em 0.5em;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.award-winner,
+.award-mention {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+.award-org {
+  opacity: 0.65;
+  font-size: 0.875rem;
+}
+.book-blurb {
+  background-color: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 1.25rem 1.25rem 1rem;
+  margin: 0;
+}
+.blurb-quote {
+  font-style: italic;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.blurb-attribution {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.8;
+  background: none;
+}
+.book-media-item:last-child {
+  border-bottom: none !important;
+}
+.media-outlet {
+  font-size: 0.85rem;
+  opacity: 0.65;
 }
 
 /* Footer */

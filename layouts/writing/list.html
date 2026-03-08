@@ -1,0 +1,88 @@
+{{ define "main" }}
+<section class="section writing-page">
+  <div class="container py-5">
+    <h1 class="mb-4 d-flex align-items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/><path d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/></svg>
+      Writing
+    </h1>
+
+    {{ $writing := site.Data.writing }}
+
+    {{/* Collect all unique topic tags */}}
+    {{ $topicTags := slice }}
+    {{ range $writing }}
+      {{ range .tags }}
+        {{ if not (in $topicTags .) }}
+          {{ $topicTags = $topicTags | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $topicTags = sort $topicTags }}
+
+    <div class="row">
+
+      {{/* Sidebar */}}
+      <div class="col-12 col-md-3 col-lg-2">
+        <button class="writing-filter-toggle btn w-100 d-md-none mb-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#writing-filter-panel"
+                aria-expanded="false"
+                aria-controls="writing-filter-panel">
+          Filter ▾
+        </button>
+        <div class="collapse d-md-block" id="writing-filter-panel">
+          <div class="writing-sidebar">
+            <div class="sidebar-section mb-3">
+              <div class="sidebar-label">Format</div>
+              <ul class="list-unstyled sidebar-tag-list">
+                <li><button class="filter-pill active" data-tag="">All</button></li>
+                <li><button class="filter-pill" data-tag="journalism">Journalism</button></li>
+                <li><button class="filter-pill" data-tag="op-ed">Op-Ed</button></li>
+                <li><button class="filter-pill" data-tag="essay">Essay</button></li>
+                <li><button class="filter-pill" data-tag="policy-brief">Policy Brief</button></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-label">Topic</div>
+              <ul class="list-unstyled sidebar-tag-list">
+                {{ range $topicTags }}
+                <li><button class="filter-pill" data-tag="{{ . }}">{{ . }}</button></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{/* Writing list */}}
+      <div class="col-12 col-md-9 col-lg-10">
+        <ul class="writing-list list-unstyled" data-filter-list>
+          {{ range $writing }}
+          {{- $itemTags := slice .format -}}
+          {{- range .tags -}}{{- $itemTags = $itemTags | append . -}}{{- end -}}
+          <li class="writing-item mb-3 pb-3 border-bottom" data-tags="{{ delimit $itemTags " " }}">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="writing-title fw-semibold">{{ .title }}</a>
+            <div class="writing-meta mt-1">
+              <em>{{ .outlet }}</em>{{ with .date }}, {{ substr . 0 4 }}{{ end }}
+              <button class="badge writing-format-badge pub-tag-btn ms-2" type="button" data-tag="{{ .format }}">{{ .format }}</button>
+            </div>
+            {{ with .tags }}
+            <div class="writing-tags mt-1">
+              {{ range . }}
+              <button class="writing-tag-pill pub-tag-btn" type="button" data-tag="{{ . }}">{{ . }}</button>
+              {{ end }}
+            </div>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{- $js := resources.Get "js/publication-filter.js" | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

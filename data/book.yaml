@@ -1,0 +1,65 @@
+purchase_url: "https://a.co/d/04CXPzKw"
+cover_image: "images/cover.jpg"
+
+description: |
+  Policing is violent. And its violence is not distributed equally: stark racial disparities persist despite decades of efforts to address them. Amid public outcry and an ongoing crisis of police legitimacy, there is pressing need to understand not only how police perceive and use violence but also why.
+
+  With unprecedented access to three police departments and drawing on more than 100 interviews and 1,000 hours on patrol, The Danger Imperative provides vital insight into how police culture shapes officers' perception and practice of violence. From the front seat of a patrol car, it shows how the institution of policing reinforces a cultural preoccupation with violence through academy training, departmental routines, powerful symbols, and officers' street-level behavior.
+
+  This violence-centric culture makes no explicit mention of race, relying on the colorblind language of "threat" and "officer safety." Nonetheless, existing patterns of systemic disadvantage funnel police hyperfocused on survival into poor minority neighborhoods. Without requiring individual bigotry, this combination of social structure, culture, and behavior perpetuates enduring inequalities in police violence.
+
+  A trailblazing, on-the-ground account of modern policing, this book shows that violence is the logical consequence of an institutional culture that privileges officer survival over public safety.
+
+awards:
+  - label: "Winner"
+    name: "Sociology of Law Outstanding Book Award"
+    org: "American Sociological Association"
+  - label: "Winner"
+    name: "Division of Policing Distinguished Book Award"
+    org: "American Society of Criminology"
+  - label: "Finalist"
+    name: "Hamilton Book Award"
+    org: "Office of the VP of Research, University of Texas at Austin"
+  - label: "Honorable Mention"
+    name: "Organizations, Occupations, and Work Distinguished Book Award"
+    org: "American Sociological Association"
+
+blurbs:
+  - quote: "Beautifully written and rigorously researched, The Danger Imperative should transform how we understand policing at its core."
+    name: "Monica C. Bell"
+    affiliation: "Yale Law School"
+  - quote: "A masterful contribution, from its harrowing opening pages to its clear-eyed conclusion."
+    name: "Christopher Uggen"
+    affiliation: "coauthor, Locked Out"
+  - quote: "By looking closely at the working lives of patrol officers and rejecting simple tropes of heroes or villains, The Danger Imperative explains why the institution charged with keeping us safe can also cause harm."
+    name: "Bruce Western"
+    affiliation: "author, Homeward"
+  - quote: "This important and timely book should be on the shelves of anyone interested in understanding policing in this country."
+    name: "Reuben J. Miller"
+    affiliation: "author, Halfway Home"
+
+media:
+  - outlet: "The Nation"
+    title: "What Is Policing For?"
+    url: ""
+  - outlet: "Spotify"
+    title: "How police guns end up in the hands of criminals"
+    url: ""
+  - outlet: "Apple Podcasts"
+    title: "Police: Heroes or Villains? A Conversation with Michael Sierra-Arévalo"
+    url: ""
+  - outlet: "Public Defenders"
+    title: "The Danger Imperative"
+    url: ""
+  - outlet: "Slate"
+    title: "What Are Police Thinking?"
+    url: ""
+  - outlet: "WBUR"
+    title: "Police Training, Culture, and Brutality"
+    url: ""
+  - outlet: "Vox"
+    title: "What Police Really Believe"
+    url: ""
+  - outlet: "GQ"
+    title: "Police Culture and Violence"
+    url: ""
