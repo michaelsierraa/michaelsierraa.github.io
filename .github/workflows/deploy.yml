@@ -57,6 +57,7 @@ jobs:
           path: ./public
 
   deploy:
+    if: false  # Pages not yet enabled — remove this line when ready to deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
