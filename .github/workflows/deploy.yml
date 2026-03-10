@@ -49,7 +49,7 @@ jobs:
         run: hugo mod tidy
 
       - name: Build
-        run: hugo --minify --baseURL "https://www.sierraarevalo.com/"
+        run: hugo --minify --baseURL "https://michaelsierraa.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -57,7 +57,7 @@ jobs:
           path: ./public
 
   deploy:
-    if: false  # Pages not yet enabled — remove this line when ready to deploy
+    if: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

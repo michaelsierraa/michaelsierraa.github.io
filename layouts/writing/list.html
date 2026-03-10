@@ -8,16 +8,7 @@
 
     {{ $writing := site.Data.writing }}
 
-    {{/* Collect all unique topic tags */}}
-    {{ $topicTags := slice }}
-    {{ range $writing }}
-      {{ range .tags }}
-        {{ if not (in $topicTags .) }}
-          {{ $topicTags = $topicTags | append . }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-    {{ $topicTags = sort $topicTags }}
+    {{- $topicTags := partial "collect-tags.html" $writing -}}
 
     <div class="row">
 
@@ -34,22 +25,26 @@
         <div class="collapse d-md-block" id="writing-filter-panel">
           <div class="writing-sidebar">
             <div class="sidebar-section mb-3">
-              <div class="sidebar-label">Format</div>
-              <ul class="list-unstyled sidebar-tag-list">
-                <li><button class="filter-pill active" data-tag="">All</button></li>
-                <li><button class="filter-pill" data-tag="journalism">Journalism</button></li>
-                <li><button class="filter-pill" data-tag="op-ed">Op-Ed</button></li>
-                <li><button class="filter-pill" data-tag="essay">Essay</button></li>
-                <li><button class="filter-pill" data-tag="policy-brief">Policy Brief</button></li>
-              </ul>
+              <div class="sidebar-label" data-bs-toggle="collapse" data-bs-target="#sidebar-format" aria-expanded="false" aria-controls="sidebar-format">Format</div>
+              <div class="collapse" id="sidebar-format">
+                <ul class="list-unstyled sidebar-tag-list">
+                  <li><button class="filter-pill active" data-tag="">All</button></li>
+                  <li><button class="filter-pill" data-tag="journalism">Journalism</button></li>
+                  <li><button class="filter-pill" data-tag="op-ed">Op-Ed</button></li>
+                  <li><button class="filter-pill" data-tag="essay">Essay</button></li>
+                  <li><button class="filter-pill" data-tag="policy-brief">Policy Brief</button></li>
+                </ul>
+              </div>
             </div>
             <div class="sidebar-section">
-              <div class="sidebar-label">Topic</div>
-              <ul class="list-unstyled sidebar-tag-list">
-                {{ range $topicTags }}
-                <li><button class="filter-pill" data-tag="{{ . }}">{{ . }}</button></li>
-                {{ end }}
-              </ul>
+              <div class="sidebar-label" data-bs-toggle="collapse" data-bs-target="#sidebar-topic-writing" aria-expanded="false" aria-controls="sidebar-topic-writing">Topic</div>
+              <div class="collapse" id="sidebar-topic-writing">
+                <ul class="list-unstyled sidebar-tag-list">
+                  {{ range $topicTags }}
+                  <li><button class="filter-pill" data-tag="{{ . }}">{{ replace . "-" " " }}</button></li>
+                  {{ end }}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -65,12 +60,12 @@
             <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="writing-title fw-semibold">{{ .title }}</a>
             <div class="writing-meta mt-1">
               <em>{{ .outlet }}</em>{{ with .date }}, {{ substr . 0 4 }}{{ end }}
-              <button class="badge writing-format-badge pub-tag-btn ms-2" type="button" data-tag="{{ .format }}">{{ .format }}</button>
+              <button class="writing-format-badge pub-tag-btn ms-2" type="button" data-tag="{{ .format }}">{{ .format }}</button>
             </div>
             {{ with .tags }}
             <div class="writing-tags mt-1">
               {{ range . }}
-              <button class="writing-tag-pill pub-tag-btn" type="button" data-tag="{{ . }}">{{ . }}</button>
+              <button class="writing-tag-pill pub-tag-btn" type="button" data-tag="{{ . }}">{{ replace . "-" " " }}</button>
               {{ end }}
             </div>
             {{ end }}

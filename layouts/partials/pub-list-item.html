@@ -1,0 +1,33 @@
+{{- $item := . -}}
+{{- $itemTags := $item.tags | default slice -}}
+<li class="pub-item mb-3 pb-3 border-bottom" data-tags="{{ delimit $itemTags " " }}">
+  <p class="mb-1">
+    {{ if eq $item.category "working_paper" -}}
+      {{ $item.authors }} (Working Paper).
+      {{ if $item.url }}<a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.title }}</a>{{ else }}{{ $item.title }}{{ end }}{{ if not (or (strings.HasSuffix $item.title "?") (strings.HasSuffix $item.title "!") (strings.HasSuffix $item.title ".")) }}.{{ end }}
+    {{- else -}}
+      {{ $item.authors }}
+      {{ if eq $item.status "forthcoming" }}(Forthcoming).{{ else }}({{ $item.year }}).{{ end }}
+      {{ if $item.url }}<a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.title }}</a>{{ else }}{{ $item.title }}{{ end }}.
+      <em>{{ $item.journal }}</em>{{ with $item.volume }}, {{ . }}{{ end }}{{ with $item.issue }}({{ . }}){{ end }}{{ with $item.pages }}, {{ . }}{{ end }}.
+    {{- end }}
+  </p>
+  {{ with $item.reprint }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+  {{ with $item.notes }}<p class="text-muted small mb-0">{{ . }}</p>{{ end }}
+  {{ with $itemTags }}
+  <div class="pub-tags mt-1">
+    {{ range $itemTags }}
+    <button class="writing-tag-pill pub-tag-btn" type="button" data-tag="{{ . }}">{{ replace . "-" " " }}</button>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{- $pubId := $item.id -}}
+  {{ with $item.abstract }}
+  <div class="mt-1">
+    <button class="pub-abstract-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-{{ $pubId }}" aria-expanded="false" aria-controls="abstract-{{ $pubId }}">Abstract ▾</button>
+    <div class="collapse" id="abstract-{{ $pubId }}">
+      <p class="pub-abstract mt-1 mb-0">{{ . }}</p>
+    </div>
+  </div>
+  {{ end }}
+</li>

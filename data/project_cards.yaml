@@ -1,0 +1,23 @@
+- id: everyday-respect
+  title: "Everyday Respect"
+  description: "Community-informed AI models to evaluate police-public interactions during traffic stops."
+  status: ""
+  collaborators: ""
+  image: "images/everyday-respect.jpg"
+  url: "/research/everyday-respect/"
+
+- id: aces
+  title: "ACES: American College Evaluation of Sports-Betting"
+  description: "Mixed methods study of U.S. college students' attitudes and experiences with online sports-betting."
+  status: ""
+  collaborators: ""
+  image: "images/aces.jpg"
+  url: "/research/aces/"
+
+- id: pfie
+  title: "PFIE: Police Firearm Injury Explorer"
+  description: "Open-source web app to explore and download data on U.S. police officers shot in the line of duty."
+  status: ""
+  collaborators: ""
+  image: "images/pfie.jpg"
+  url: "/research/pfie/"

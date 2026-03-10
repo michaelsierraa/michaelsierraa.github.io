@@ -1,0 +1,9 @@
+{{- $tags := slice -}}
+{{- range . -}}
+  {{- range .tags -}}
+    {{- if not (in $tags .) -}}
+      {{- $tags = $tags | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return sort $tags -}}

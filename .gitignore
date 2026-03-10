@@ -7,6 +7,9 @@ hugo_stats.json
 # CV working files — not for public serving or version control
 _cv-source/
 
+# R session history — never commit
+.Rhistory
+
 # macOS metadata — never commit
 .DS_Store
 

@@ -121,6 +121,18 @@ header {
   color: var(--color-bg);
 }
 
+/* Project page buttons — outlined style in all modes */
+.project-buttons .btn-primary {
+  background-color: var(--color-bg) !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-accent) !important;
+}
+.project-buttons .btn-primary:hover {
+  background-color: var(--color-text) !important;
+  border-color: var(--color-text) !important;
+  color: var(--color-bg) !important;
+}
+
 /* Download CV button — light mode: outlined style matching social icon color */
 html[data-bs-theme="light"] .rad-showcase .btn-primary {
   background-color: var(--color-bg);
@@ -385,6 +397,14 @@ html[data-bs-theme="light"] .rad-showcase .btn-primary:hover {
   color: var(--color-text);
   opacity: 0.5;
   margin-bottom: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+.sidebar-label::after {
+  content: " ▸";
+}
+.sidebar-label[aria-expanded="true"]::after {
+  content: " ▾";
 }
 .sidebar-tag-list li {
   margin-bottom: 0.1rem;
@@ -417,6 +437,12 @@ html[data-bs-theme="light"] .rad-showcase .btn-primary:hover {
   color: var(--color-text);
   background: transparent;
   font-size: 0.875rem;
+}
+
+/* Mobile sidebar — show tags directly, skip nested Topic collapse */
+@media (max-width: 767.98px) {
+  .writing-sidebar .sidebar-label { display: none; }
+  .writing-sidebar .collapse { display: block !important; }
 }
 
 /* Clickable article tag pills — research page */
@@ -538,6 +564,38 @@ html[data-theme-auto]                              .theme-icon-auto  { display: 
 .media-outlet {
   font-size: 0.85rem;
   opacity: 0.65;
+}
+
+/* Breadcrumb fixes */
+/* Suppress Bootstrap's ::before "/" separator — theme handles separators via ::after */
+.breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  content: none !important;
+  display: none !important;
+}
+/* Fix active breadcrumb item color in dark mode */
+html[data-bs-theme="dark"] .breadcrumb-item.active,
+html[data-bs-theme="dark"] .breadcrumb-item.active .breadcrumb-text {
+  color: #fff !important;
+}
+
+/* Image credit */
+.image-credit {
+  font-size: 0.75rem;
+  color: #999 !important;
+}
+.image-credit a {
+  color: #999 !important;
+  text-decoration: none !important;
+}
+.image-credit a:hover {
+  color: var(--color-accent) !important;
+}
+[data-bs-theme="dark"] .image-credit,
+[data-bs-theme="dark"] .image-credit a {
+  color: #555 !important;
+}
+[data-bs-theme="dark"] .image-credit a:hover {
+  color: var(--color-accent) !important;
 }
 
 /* Footer */

@@ -2,6 +2,7 @@
 # Categories: book, article, working_paper, chapter, journalism, op_ed, report, encyclopedia, book_review, essay, policy_brief
 
 - category: book
+  id: 1
   label: "Books"
   authors: "Sierra-Arévalo, M."
   year: 2024
@@ -15,6 +16,7 @@
     Hamilton Book Award Finalist (2025)
 
 - category: article
+  id: 2
   label: "Peer-Reviewed Journal Articles"
   authors: "Chillar, V. F., Lubell, M., Kaplun, K., & Sierra-Arévalo, M."
   year: null
@@ -23,11 +25,12 @@
   journal: "Police Practice and Research"
   doi: "10.1080/15614263.2025.2606822"
   url: "https://doi.org/10.1080/15614263.2025.2606822"
-  tags: [policing, police-culture, technology, content-analysis]
+  tags: [policing, police-culture, technology, content-analysis, mapping]
   abstract: |
     Apace with contemporary critiques of police funding and the allocation of their budgets, debates about policing technologies focus on 'coercive' technology that officers use to deploy force and prevent injury, and 'surveillant' technology that passively gathers massive amounts of data about the public. At present, however, research does not recognize the broader marketplace for police products and services that fall outside these categories. This limits consideration of the full scale of police expenditures on private-sector technology and mitigates police agencies' implementation of transparent and efficient budgeting processes, including acquisitions and reporting. Using a novel dataset of booths at the International Association of Chiefs of Police (IACP) Annual Conference and Exposition from 2012 to 2018, we empirically advance the concept of the 'police-industrial complex' and describe the landscape of for-profit companies that produce technologies and services for police. We find the coercive and surveillant technologies emphasized in prior literature account for 19.8% and 13.1% of vendor booths, respectively, at IACP during the study period. By comparison, software makes up 25.5% of total IACP vendor booths. We conclude with discussion of these findings' implications for assisting police administrators in ensuring efficient and transparent budgetary practices.
 
 - category: article
+  id: 3
   authors: "Semenza, D. C., Berryessa, C. M., & Sierra-Arévalo, M."
   year: 2025
   title: "Depictions of Firearm Violence Perpetrators and Support for Firearm Policies: An Experimental Survey Analysis of Mental Illness and Criminal Background"
@@ -42,6 +45,8 @@
     We used an experimental study design with newspaper vignettes to examine how characteristics of gun violence perpetrators including mental illness and previous incarceration influence three categories of firearm policy support in a national sample of U.S. adults (N = 3,387). Depictions of mass shootings elicit greater support for firearm policies than other types such as suicides, accidents, or street-level homicides. Further, depictions of mental illness and previous incarceration increase support for policies regulating who may legally own, purchase, and possess firearms. Demographic characteristics of perpetrators such as gender and race largely do not affect public policy support, although personal characteristics of respondents themselves are predictive of support.
 
 - category: article
+  id: 4
+  project: pfie
   authors: "Sierra-Arévalo, M., Nix, J., & Mourtgos, S. M."
   year: 2023
   title: "The 'war on cops,' retaliatory violence, and the murder of George Floyd"
@@ -56,6 +61,7 @@
     The police murder of George Floyd sparked nationwide protests in the summer of 2020 and revived claims that public outcry over such high-profile police killings perpetuated a violent "war on cops." Using data collected by the Gun Violence Archive (GVA) on firearm assaults of U.S. police officers, we use Bayesian structural time series (BSTS) modeling to empirically assess if and how patterns of firearm assault on police officers in the United States were influenced by the police murder of George Floyd. Our analysis finds that the murder of George Floyd was associated with a 3-week spike in firearm assaults on police, after which the trend in firearms assaults dropped to levels only slightly above that which were predicted by pre-Floyd data. We discuss potential explanations for these findings and consider their relevance to the contemporary discussion of a "war on cops," violence, and officer safety.
 
 - category: article
+  id: 5
   authors: "Berryessa, C. M., Sierra-Arévalo, M., & Semenza, D. C."
   year: 2023
   title: "Portrayals of gun violence victimization and public support for firearm policies: An experimental analysis"
@@ -70,6 +76,8 @@
     This study examines how characteristics of victims and types of incidents described in a media account of gun violence affect public support for three categories of policies that regulate firearms. A randomized experiment with a sample of US public (N = 3410). Victim race, particularly if the victim was Black, was a strong predictor of less public support for all tested categories of firearm regulation. Respondents were less supportive of policies to address gun suicide or accidents and more supportive of policy solutions to mass shootings, compared to street-level gun homicides. Depictions of victim gender, mental illness, prior incarceration, and age were less salient to support across categories of firearm regulation, compared to race and type of incident. Media coverage of gun violence has heterogenous effects on public support for firearm regulation and may influence support for policies aimed at reducing specific types of gun violence.
 
 - category: article
+  id: 6
+  project: pfie
   authors: "Sierra-Arévalo, M., Nix, J., & O'Guinn, B."
   year: 2022
   title: "A national analysis of trauma care proximity and firearm assault survival among U.S. police"
@@ -79,11 +87,12 @@
   pages: "388–396"
   doi: "10.1080/15614263.2022.2036611"
   url: "https://doi.org/10.1080/15614263.2022.2036611"
-  tags: [officer-safety, gun-violence, pfie, regression]
+  tags: [officer-safety, gun-violence, pfie, regression, mapping]
   abstract: |
     Past research on factors influencing firearm assault (FA) mortality have not focused on police officers who, compared to other U.S. workers and the general public, experience especially high rates of firearm victimization. This study focuses on this unique population of FA victims and examines the relationship between travel time to the nearest trauma care facility and the probability of survival among officers shot on duty. Combining data on trauma care center location and 7 years of data on U.S. police officers fatally or non-fatally assaulted with a firearm, we use logistic regression to model the probability of FA fatality among police by proximity of the FA to the nearest trauma care facility. We find that travel time to trauma care was not associated with reduced FA mortality among police from 2014 to 2020. FA mortality was significantly lower in 2020 than the six years prior.
 
 - category: article
+  id: 7
   authors: "Haas, N., Haenschen, K., Kumar, T., Panagopoulos, C., Peyton, K., Ravanilla, N., & Sierra-Arévalo, M."
   year: 2022
   title: "Organizational Identity and Positionality in Randomized Control Trials: Considerations and Advice for Collaborative Research Teams"
@@ -98,6 +107,7 @@
     This article focuses on field experiments and the role of "organizational positionality"—that is, an OP's position in relation to the social and political context in which it operates. We draw on a diverse set of experiences across different research contexts to describe how an organization's funding sources, political allegiances, scope of operations and mandate, legal status, identities, and reputation shape its goals and incentives, as well as how it is perceived by and interacts with others involved in the research process. We also highlight how a failure to consider organizational positionality can undermine research credibility and produce negative outcomes. The article concludes by offering suggestions for how researchers can successfully navigate organizational positionality.
 
 - category: article
+  id: 8
   authors: "Sierra-Arévalo, M., & Papachristos, A."
   year: 2021
   title: "Bad apples and incredible certitude"
@@ -112,6 +122,7 @@
     Chalfin and Kaplan attend to the problem of police misconduct with a series of simulation analyses that leverage data on complaints and uses of force in the Chicago Police Department. They conclude that incapacitating officers has minimal effects on misconduct and that, given political constraints, policy makers may prefer broader reforms around accountability and management to removing "bad apples." In this comment, we argue that this conclusion and its policy implications are characterized by "incredible certitude" driven by a selective focus on a subset of their full simulation results and inadequate incorporation of network spillovers into their analysis. Contrary to their conclusions, their preferred estimates of the effect of incapacitating "bad apples" on misconduct are squarely within the range of other interventions aimed at reducing police complaints and use of force. Once network spillovers are accounted for, estimates are up to five times as large. We conclude with a discussion of how even small reductions in misconduct can have outsized benefits as measured in both dollars and human suffering, and argue that the removal of problem officers is a normative good that should be pursued on moral grounds.
 
 - category: article
+  id: 9
   authors: "Sierra-Arévalo, M."
   year: 2021
   title: "American Policing and the Danger Imperative"
@@ -127,6 +138,8 @@
     In spite of long-term declines in the violent victimization of U.S. police officers, the danger of police work continues to structure police socialization, culture, and behavior. Existing research, though attentive to police behavior and deviance that negatively affects the public, analytically ignores how the danger of policing engenders officer behavior that harms police themselves. Drawing on ethnographic observations and interviews in three U.S. police departments, this article describes how police are informally and formally socialized into the danger imperative—a cultural frame that emphasizes violence and the need for officer safety—and its effect on officer behavior. As a result of perception mediated through the danger imperative, officers engage in policy-compliant and policy-deviant behaviors to protect themselves from violence. Unfortunately, policy-deviant behaviors such as unauthorized high-speed driving and not wearing a seatbelt, though justified in the name of safety, lead to catastrophic car accidents that injure and kill both police and members of the public. This article concludes with discussion of how seemingly mundane policy-deviant behaviors are a reflection of assumptions within police culture that undergird police practices that damage public wellbeing and perpetuate broader inequalities in U.S. policing.
 
 - category: article
+  id: 10
+  project: pfie
   authors: "Sierra-Arévalo, M., & Nix, J."
   year: 2020
   title: "Gun victimization in the line of duty: Fatal and nonfatal firearm assaults on police officers in the United States, 2014–2019"
@@ -136,11 +149,12 @@
   pages: "1041–1066"
   doi: "10.1111/1745-9133.12507"
   url: "https://doi.org/10.1111/1745-9133.12507"
-  tags: [officer-safety, gun-violence, pfie, policing, police-violence]
+  tags: [officer-safety, gun-violence, pfie, policing, police-violence, mapping]
   abstract: |
     Using open-source data from the Gun Violence Archive (GVA), we analyze national- and state-level trends in fatal and nonfatal firearm assaults of U.S. police officers from 2014 to 2019 (N = 1,467). Results show that (a) most firearm assaults are nonfatal, (b) there is no compelling evidence that the national rate of firearm assault on police has substantially increased during the last 6 years, and (c) there is substantial state-level variation in rates of firearm assault on police officers. GVA has decided strengths relative to existing data sources on police victimization and danger in policing. We consider the promises and pitfalls of this and other open-source data sets in policing research and recommend that recent state-level improvements in use-of-force data collection be replicated and expanded to include data on violence against police.
 
 - category: article
+  id: 11
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "The commemoration of death, organizational memory, and police culture"
@@ -155,6 +169,7 @@
     Police scholars document that although there is fragmentation of the so-called "monolithic" police culture, historically consistent features of the occupational culture of police exist. By drawing on ethnographic observations in three U.S. police departments, I describe how one consistent feature of police culture—the preoccupation with danger and potential death—is maintained by the commemoration of officers killed in the line of duty. Through the use of commemorative cultural artifacts, officers and departments construct an organizational memory that locally reflects and reifies the salience of danger and potential death in policing. Furthermore, commemoration of fallen officers is not restricted to a department's own; the dead of other departments are commemorated by distant police organizations and their officers, maintaining broad, occupational assumptions of dangerous and deadly police work that transcend a single department and its localized organizational memory. Implications for the study of police culture, inequalities in policing, and police reform are considered.
 
 - category: article
+  id: 12
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "Technological Innovation and Police Officers' Understanding and Use of Force"
@@ -170,6 +185,7 @@
     Today, the TASER is a ubiquitous less-than-lethal force technology lauded for its ability to curb police officers' use of excessive and lethal force. Although less injurious than other weapons, concerns exist that the TASER can still be misused by police officers. This article uses ethnographic observations and unstructured interviews across three urban police departments to describe how the TASER affects officers' understanding and use of force in beneficial and unintended ways. I find that officers understand and use the TASER as a device that can enhance safety for themselves and suspects, including in cases where the TASER is used in lieu of lethal force that officers believe would have been justified. Despite these benefits, understanding of the TASER as a safety-enhancing technology also influences the use of excessive force via TASER by young, inexperienced officers, ultimately contributing to the very problem TASERs were intended to ameliorate.
 
 - category: article
+  id: 13
   authors: "Peyton, K., Sierra-Arévalo, M., & Rand, D. G."
   year: 2019
   title: "A field experiment on community policing and police legitimacy"
@@ -185,6 +201,7 @@
     Despite decades of declining crime rates, longstanding tensions between police and the public continue to frustrate the formation of cooperative relationships necessary for the function of the police and the provision of public safety. In response, policy makers continue to promote community-oriented policing (COP) and its emphasis on positive, nonenforcement contact with the public as an effective strategy for enhancing public trust and police legitimacy. Prior research designs, however, have not leveraged the random assignment of police–public contact to identify the causal effect of such interactions on individual-level attitudes toward the police. Here, we report on a randomized field experiment conducted in New Haven, CT, that sheds light on this question and identifies the individual-level consequences of positive, nonenforcement contact between police and the public. Findings indicate that a single instance of positive contact with a uniformed police officer can substantially improve public attitudes toward police, including legitimacy and willingness to cooperate. These effects persisted for up to 21 days and were not limited to individuals inclined to trust and cooperate with the police prior to the intervention. This study demonstrates that positive nonenforcement contact can improve public attitudes toward police and suggests that police departments would benefit from an increased focus on strategies that promote positive police–public interactions.
 
 - category: article
+  id: 14
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2017
   title: "Social Networks and Gang Violence Reduction"
@@ -199,6 +216,7 @@
     This review traces the origins, development, and use of social network analysis in gang research and gang violence reduction strategies. Although early gang scholars intuitively recognized the networked nature of gangs and gang violence, such insights were not always leveraged by gang violence reduction efforts that became increasingly enforcement-centric throughout the twentieth century. This review describes these historical shifts, the recent advent of social network analysis in research and gang interventions, and future directions that research and interventions can take to develop a more victim-focused approach to gang violence reduction.
 
 - category: article
+  id: 15
   authors: "Sierra-Arévalo, M., Charette, Y., & Papachristos, A. V."
   year: 2017
   title: "Evaluating the Effect of Project Longevity on Group-Involved Shootings and Homicides in New Haven, Connecticut"
@@ -213,6 +231,7 @@
     Beginning in November 2012, New Haven, Connecticut, served as the pilot site for Project Longevity, a statewide focused deterrence gun violence reduction strategy. The intervention brings law enforcement, social services, and community members together to meet with members of violent street groups at program call-ins. Using autoregressive integrated moving average models and controlling for the possibility of a non-New Haven–specific decline in gun violence, a decrease in group offending patterns, and the limitations of police-defined group member involved (GMI) categorization of shootings and homicides, the results of our analysis show that Longevity is associated with a reduction of almost five GMI incidents per month. These findings bolster research confirming the efficacy of focused deterrence approaches to reducing gun violence.
 
 - category: article
+  id: 16
   authors: "Sierra-Arévalo, M."
   year: 2016
   title: "Legal cynicism and protective gun ownership among active offenders in Chicago"
@@ -227,25 +246,41 @@
     Most American gun owners report having their firearms for protection. However, these national estimates are likely to undersample residents of marginalized urban communities where rates of violent victimization, and presumably the need for personal protection, are more pronounced. Further, this undersampling limits our understanding of motivations for gun ownership within the "hidden" group of active criminal offenders that are more likely to be both victims and offenders of street crime. Drawing on past work linking neighborhood violence to legal cynicism, and using data gathered by the Chicago Gun Project (CGP), I employ measures of police legitimacy to explore the effect of distrust of legal agents on protective gun ownership among active offenders in Chicago. These data confirm that lower levels of police legitimacy are significantly related to a higher probability of acquiring a firearm for protection. I consider the ways that gang membership, legal changes in Chicago, and gun behaviors are related to protective gun ownership, as well as how community policing and procedural justice can improve perceptions of police and enhance their legitimacy, potentially reducing the incentives to engage in violent, extralegal "self-help" with a firearm.
 
 - category: working_paper
+  id: 17
+  project: everyday-respect
   label: "Working Papers"
   authors: "Sierra-Arévalo, M., Alcocer, J., Brown, L., Delerme, R., Friedman, B., Graham, B. A. T., Muttram, H., Traeger, J., & Weller, N."
   year: null
   title: "Police as Policymakers: How Experiences with Policy Implementation Shape Policy Representation"
   url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5766842"
+  tags: [policing, survey, topic-modeling, interviews, political-representation, race]
+  abstract: |
+    Studies of political representation tend to focus on public preferences and either legislative policy or the actions of elected officials. Alignment between public opinion and de jure policy is a key element of democratic politics. However, policy implementation determines de facto policy as experienced by the public. We combine survey and interview data about preferences and experiences with police traffic stops in Los Angeles, CA. Survey results show little variation across racial groups' reported preferences and experiences with traffic stops. However, we observe considerable variation in views of police performance. Interview data indicate that despite similar preferences regarding police treatment, minority respondents' direct and vicarious experiences with police create fear and anxiety that affect their views on present day policing. Studies of representation therefore should take account of policy implementation to understand what may be superficial correspondence between preferences and written policy.
 
 - category: working_paper
+  id: 18
+  project: everyday-respect
   authors: "Weller, N., Graham, B. A. T., Sierra-Arévalo, M., Brown, L., Alcocer, J., & Muttram, H."
   year: null
   title: "Political Control and Policing: When Do Police Comply with Police Reform?"
-  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5288326"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6225738"
+  tags: [policing, policy, traffic-stops, police-misconduct, police-reform, diff-in-diff, interviews]
+  abstract: |
+    Police wield broad discretion. They are also agents of political principals who set policy that prescribes their behavior. We develop a model of police reform and argue that successful implementation requires that either (1) officers do not resist key policy elements or (2) principals are willing to sanction non-compliant officers. We test our theory using a 2022 Los Angeles Police Department reform regarding the practice of pretextual traffic stops. Drawing on body-worn camera footage and millions of stop records, we find that officers complied with the stop documentation reforms, which were not strongly opposed. In comparison, early reductions in pretextual stops dissipated within a year. Interviews with LAPD personnel support our model's predictions that noncompliance was driven by agent resistance and a lack of expected sanctions for policy violations.
 
 - category: working_paper
+  id: 19
+  project: everyday-respect
   authors: "Graham, B. A. T., Brown, L., Chochlakis, G., Dehghani, M., Delerme, R., Friedman, B., Graeden, E., Golazizian, P., Hebbar, R., Hejabi, P., Kommineni, A., Salinas, M., Sierra-Arévalo, M., Trager, J., Weller, N., & Narayanan, S."
   year: null
   title: "A Multi-Perspective Machine Learning Approach to Evaluating Police-Driver Interaction in Los Angeles"
   url: "https://arxiv.org/abs/2402.01703"
+  tags: [policing, artificial-intelligence, machine-learning, body-worn-cameras, methods, traffic-stops]
+  abstract: |
+    Interactions between the government officials and civilians affect public wellbeing and the state legitimacy that is necessary for the functioning of democratic society. Police officers, the most visible and contacted agents of the state, interact with the public more than 20 million times a year during traffic stops. Today, these interactions are regularly recorded by body-worn cameras (BWCs), which are lauded as a means to enhance police accountability and improve police-public interactions. However, the timely analysis of these recordings is hampered by a lack of reliable automated tools that can enable the analysis of these complex and contested police-public interactions. This article proposes an approach to developing new multi-perspective, multimodal machine learning (ML) tools to analyze the audio, video, and transcript information from this BWC footage. Our approach begins by identifying the aspects of communication most salient to different stakeholders, including both community members and police officers. We move away from modeling approaches built around the existence of a single ground truth and instead utilize new advances in soft labeling to incorporate variation in how different observers perceive the same interactions. We argue that this inclusive approach to the conceptualization and design of new ML tools is broadly applicable to the study of communication and development of analytic tools across domains of human interaction, including education, medicine, and the workplace.
 
 - category: chapter
+  id: 20
   label: "Peer-Reviewed Book Chapters"
   authors: "Bussey, T. P., Nix, J., & Sierra-Arévalo, M."
   year: 2025
@@ -256,6 +291,7 @@
   publisher: "Edward Elgar Publishing"
 
 - category: chapter
+  id: 21
   authors: "Sierra-Arévalo, M."
   year: 2021
   title: "Reward and 'Real' Police Work"
@@ -265,6 +301,7 @@
   publisher: "New York University Press"
 
 - category: chapter
+  id: 22
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2015
   title: "Social Network Analysis and Gangs"
@@ -274,6 +311,7 @@
   publisher: "John Wiley & Sons"
 
 - category: chapter
+  id: 23
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2015
   title: "Applying Group Audits to Problem-Oriented Policing"
@@ -283,6 +321,7 @@
   publisher: "Lynne Rienner Publishers"
 
 - category: journalism
+  id: 24
   label: "Journalism"
   authors: "Sierra-Arévalo, M."
   year: 2025
@@ -293,6 +332,7 @@
   url: "https://www.texasmonthly.com/news-politics/tim-kennedy-manosphere-mma-green-beret/"
 
 - category: op_ed
+  id: 25
   label: "Op-Eds"
   authors: "Sierra-Arévalo, M."
   year: 2022
@@ -303,6 +343,7 @@
   url: "https://www.latimes.com/opinion/story/2022-01-04/burlington-shooting-police-culture-firearms"
 
 - category: op_ed
+  id: 26
   authors: "Sierra-Arévalo, M."
   year: 2021
   date: "2021-07-16"
@@ -312,6 +353,7 @@
   url: "https://thehill.com/opinion/white-house/563276-bidens-plan-to-spend-billions-on-community-policing-is-bad-policy"
 
 - category: op_ed
+  id: 27
   authors: "Sierra-Arévalo, M."
   year: 2020
   date: "2020-06-25"
@@ -321,6 +363,7 @@
   url: "https://www.timeshighereducation.com/opinion/us-universities-should-invest-students-not-policing-them"
 
 - category: op_ed
+  id: 28
   authors: "Sierra-Arévalo, M."
   year: 2020
   date: "2020-05-21"
@@ -330,6 +373,7 @@
   url: "https://www.washingtonpost.com/outlook/2020/05/21/is-armed-protest-by-african-americans-treated-differently-history-says-yes/"
 
 - category: op_ed
+  id: 29
   authors: "Sierra-Arévalo, M."
   year: 2019
   date: "2019-09-29"
@@ -339,6 +383,7 @@
   url: "https://www.nj.com/opinion/2019/09/1-single-good-encounter-with-a-cop-engenders-a-lot-of-trust-study-finds.html"
 
 - category: op_ed
+  id: 30
   authors: "Sierra-Arévalo, M."
   year: 2017
   date: "2017-01-05"
@@ -348,6 +393,7 @@
   url: "https://workinprogress.oowsection.org/2017/01/05/why-dont-cops-wear-seatbelts-how-the-demand-for-officer-safety-endangers-police-officers/"
 
 - category: op_ed
+  id: 31
   authors: "Sierra-Arévalo, M."
   year: 2016
   date: "2016-07-20"
@@ -357,6 +403,7 @@
   url: "https://blogs.lse.ac.uk/usappblog/2016/07/20/broken-windows-is-broken-study-shows-that-a-more-focused-approach-to-tackling-street-violence-can-be-more-effective/"
 
 - category: op_ed
+  id: 32
   authors: "Sierra-Arévalo, M."
   year: 2015
   date: "2015-05-31"
@@ -366,6 +413,7 @@
   url: "https://www.courant.com/2015/05/31/the-shooting-disease-who-you-know-where-you-live/"
 
 - category: op_ed
+  id: 33
   authors: "Sierra-Arévalo, M."
   year: 2015
   date: "2015-04-22"
@@ -375,6 +423,7 @@
   url: "http://theconversation.com/civilizing-the-fractured-relationship-between-police-and-minority-communities-40061"
 
 - category: op_ed
+  id: 34
   authors: "Sierra-Arévalo, M."
   year: 2015
   date: "2015-01-25"
@@ -384,6 +433,7 @@
   url: "https://www.nhregister.com/columnist/article/Forum-An-opportunity-to-rise-above-fear-for-11353666.php"
 
 - category: op_ed
+  id: 35
   authors: "Sierra-Arévalo, M."
   year: 2015
   date: "2015-01-28"
@@ -393,6 +443,7 @@
   url: "https://isps.yale.edu/news/blog/2015/01/the-breakdown-of-broken-windows"
 
 - category: report
+  id: 36
   label: "Government Reports"
   authors: "Papachristos, A. V., & Sierra-Arévalo, M."
   year: 2018
@@ -402,6 +453,7 @@
   url: "https://www.nationalpublicsafetypartnership.org/Clearinghouse/Resource/745/Policing-the-Connected-World-Using-social-network-analysis-in-police-community-partnerships"
 
 - category: encyclopedia
+  id: 37
   label: "Encyclopedia Articles"
   authors: "Sierra-Arévalo, M."
   year: 2018
@@ -413,6 +465,7 @@
   url: "https://doi.org/10.1093/OBO/9780199756384-0213"
 
 - category: book_review
+  id: 38
   label: "Book Reviews"
   authors: "Sierra-Arévalo, M."
   year: 2025
@@ -425,6 +478,7 @@
   url: "https://doi.org/10.56331/ijps.v3i2.14345"
 
 - category: book_review
+  id: 39
   authors: "Sierra-Arévalo, M."
   year: 2021
   title: "Review of Evaluating Police Uses of Force, by Seth W. Stoughton, Jeffrey J. Noble and Geoffrey P. Alpert"
@@ -436,6 +490,7 @@
   url: "https://doi.org/10.1177/1362480620965174"
 
 - category: book_review
+  id: 40
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "Review of No Place on the Corner: The Costs of Aggressive Policing, by Jan Haldipur"
@@ -447,6 +502,7 @@
   url: "https://doi.org/10.1086/705407"
 
 - category: essay
+  id: 41
   label: "Essays"
   authors: "Sierra-Arévalo, M."
   year: 2021
@@ -456,6 +512,7 @@
   url: "https://tinyurl.com/4pvmb9zw"
 
 - category: essay
+  id: 42
   authors: "Sierra-Arévalo, M."
   year: 2020
   date: "2020-07"
@@ -467,6 +524,7 @@
   url: "https://www.asanet.org/wp-content/uploads/attach/footnotes/footnotes_july-august_2020.pdf"
 
 - category: essay
+  id: 43
   authors: "Sierra-Arévalo, M."
   year: 2020
   date: "2020-06-24"
@@ -476,6 +534,7 @@
   url: "https://www.jurist.org/commentary/2020/06/sierra-arevalo-police-training/"
 
 - category: essay
+  id: 44
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "Police and Legitimacy in Mexico City"
@@ -487,6 +546,7 @@
   url: "https://doi.org/10.1177/1536504219883851"
 
 - category: essay
+  id: 45
   authors: "Sierra-Arévalo, M."
   year: 2015
   date: "2015-04-28"
@@ -496,6 +556,7 @@
   url: "http://theconversation.com/baltimore-riots-the-fire-this-time-and-the-fire-last-time-and-the-time-between-40926"
 
 - category: policy_brief
+  id: 46
   label: "Policy Briefs"
   authors: "Sierra-Arévalo, M."
   year: 2014
@@ -506,6 +567,7 @@
   url: "https://scholars.org/contribution/how-enhance-police-legitimacy-and-reduce-gun-violence-poor-minority-communities"
 
 - category: policy_brief
+  id: 47
   authors: "Sierra-Arévalo, M."
   year: 2013
   date: "2013-04-01"
@@ -513,3 +575,13 @@
   outlet: "Scholars Strategy Network"
   word_count: 974
   url: "https://scholars.org/contribution/how-targeted-deterrence-helps-police-reduce-gun-deaths"
+
+- category: dataset
+  id: 48
+  project: pfie
+  authors: "Sierra-Arévalo, M., Nix, J., Kaplun, K., Flaherty, P. T., Villarreal, J., Pham, P. P., Bach, A., & Garcia, C."
+  year: 2026
+  title: "Police Firearm Injury Explorer (PFIE)"
+  publisher: "OSF"
+  doi: "10.17605/OSF.IO/6X2RP"
+  url: "https://doi.org/10.17605/OSF.IO/6X2RP"

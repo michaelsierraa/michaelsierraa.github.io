@@ -1,0 +1,19 @@
+image: "images/everyday-respect.jpg"
+icon_viewbox: "0 -960 960 960"
+icon_paths: '<path d="m368-336 112-84 110 84-42-136 112-88H524l-44-136-44 136H300l110 88-42 136ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/>'
+image_credit: "Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:California_Highway_Patrol_Dodge_Charger_conducting_traffic_stop.jpg"
+
+buttons:
+  - label: "Everyday Respect"
+    url: "https://dornsife.usc.edu/everydayrespect/"
+    icon_paths: '<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>'
+
+description: |
+  Everyday Respect is a collaboration of social scientists, engineers, and computer scientists across the University of Texas at Austin, University of Southern California, University of California — Riverside, and Georgetown University.
+
+  Our approach assumes that different people can have different interpretations of the same interaction. We employ a diverse set of human annotators to view and score the content of body-worn camera (BWC) video from police traffic stops in Los Angeles. These human annotations are then used to train machine learning models to automate the review of BWC video at scale.
+
+  We will use these models to explore when and how police-public interactions result in effective and respectful interactions, when they lead to escalation, and how successful de-escalation occurs. These tools, including an open-source video annotation platform, will be released free and open-source to support open science, enhance transparency, and improve police-public communication across the U.S.
+
+media_ids: [109, 110, 111]

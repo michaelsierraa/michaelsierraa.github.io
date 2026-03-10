@@ -51,12 +51,11 @@
   }
 
   function closeMobilePanel() {
-    var panel = document.getElementById('research-filter-panel');
-    if (!panel || !panel.classList.contains('show')) return;
-    if (window.bootstrap && bootstrap.Collapse) {
+    if (!window.bootstrap || !bootstrap.Collapse) return;
+    document.querySelectorAll('.writing-filter-toggle + .collapse.show').forEach(function (panel) {
       var instance = bootstrap.Collapse.getInstance(panel);
       if (instance) instance.hide();
-    }
+    });
   }
 
   pills.forEach(function (pill) {
