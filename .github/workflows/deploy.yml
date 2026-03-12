@@ -49,7 +49,7 @@ jobs:
         run: hugo mod tidy
 
       - name: Build
-        run: hugo --minify --baseURL "https://michaelsierraa.github.io/"
+        run: hugo --minify --baseURL "https://sierraarevalo.com/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
