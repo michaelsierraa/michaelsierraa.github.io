@@ -126,6 +126,10 @@ Edit `content/home/home.md`. The about text is the `content` parameter of the `a
 ### Edit the Book Page
 Edit `data/book.yaml`. Fields: `title`, `subtitle`, `cover_image`, `description`, `purchase_url`, `awards`, `blurbs`, `media_ids`.
 
+### Extracting CV Content for YAML Population
+
+YAML creation for publications and media was aided by [opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf), which extracts CV content from PDF into Markdown. To ensure full URLs are extracted, disable the content safety filter in opendataloader before running.
+
 ### Add a Publication
 
 Add an entry to `data/publications.yaml`. Required fields:

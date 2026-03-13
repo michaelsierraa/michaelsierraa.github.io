@@ -53,14 +53,14 @@ target = "assets/css/bootstrap-print.css"
 
 [params]
 title       = "Michael Sierra-Arévalo"
-description = "Associate Professor of Sociology at UT Austin. Scholar of policing, violence, and law. Author of The Danger Imperative."
-images      = ["/img/og-img.png"]
+description = "Associate Professor of Sociology at UT Austin. Author of The Danger Imperative. Writing about culture, risk, violence, law, with a focus on policing, firearms, violence prevention, and sports-betting."
+images      = ["/img/og-img.jpg"]
 themeColor  = "#595f39"
 
 [params.seo]
 siteName        = "Michael Sierra-Arévalo"
-siteDescription = "Associate Professor of Sociology at UT Austin. Scholar of policing, violence, and law. Author of The Danger Imperative."
-siteImage       = "/img/og-img.png"
+siteDescription = "Associate Professor of Sociology at UT Austin. Author of The Danger Imperative. Writing about culture, risk, violence, law, with a focus on policing, firearms, violence prevention, and sports-betting."
+siteImage       = "/img/og-img.jpg"
 
 [params.seo.person]
 name   = "Michael Sierra-Arévalo"
