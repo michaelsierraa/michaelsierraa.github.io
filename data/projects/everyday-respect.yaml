@@ -10,7 +10,7 @@ buttons:
     icon_paths: '<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>'
 
 description: |
-  Everyday Respect is a collaboration of social scientists, engineers, and computer scientists to build community-informed AI models for analyzing police body-worn camera video at scale. The research team includes researchers from the University of Texas at Austin, University of Southern California, University of California — Riverside, and Georgetown University.
+  Everyday Respect is a collaboration of social scientists, engineers, and computer scientists to build community-informed AI models for analyzing police body-worn camera video. The research team includes researchers from the University of Texas at Austin, University of Southern California, University of California — Riverside, and Georgetown University.
 
   Prior approaches assume there is a single, correct measure of a given interaction—a "ground truth." Our approach assumes that different people can have different interpretations of the same interaction. We employ a diverse set of human annotators to view and score the content of body-worn camera (BWC) video from police traffic stops in Los Angeles. These human annotations are then used to train machine learning models to automate the review of BWC video at scale.
 
