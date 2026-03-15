@@ -4,8 +4,14 @@ node_modules/
 .hugo_build.lock
 hugo_stats.json
 
-# CV working files — not for public serving or version control
+# CV source and build files — live in private cv repo, not here
 _cv-source/
+cv-template/
+scripts/
+data/cv/
+
+# CV build artifact — committed by cv repo sync workflow, not generated here
+# static/files/cv.pdf is intentionally tracked (synced in from cv repo)
 
 # R session history — never commit
 .Rhistory

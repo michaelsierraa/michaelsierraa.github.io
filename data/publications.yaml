@@ -14,6 +14,29 @@
     ASC Division of Policing Outstanding Book Award (2024);
     ASA Organizations, Occupations, & Work Book Award (2025, Honorable Mention);
     Hamilton Book Award Finalist (2025)
+  reviews:
+    popular:
+      - outlet: "The Nation"
+        url: "https://www.thenation.com/article/culture/michael-sierra-arevalo-police-danger/"
+    academic:
+      - journal: "American Journal of Sociology"
+        url: "https://www.journals.uchicago.edu/doi/10.1086/732109"
+      - journal: "Law & Social Inquiry"
+        url: "https://www.cambridge.org/core/journals/law-and-social-inquiry/article/boundaries-of-twentyfirstcentury-policing/48B38CEAB9AD1A75B081BDD60E57C12B"
+      - journal: "Social Problems"
+        url: "https://journals.sagepub.com/doi/full/10.1177/23326492251334307"
+      - journal: "Sociology of Race and Ethnicity"
+        url: "https://doi.org/10.1177/23326492251334307"
+      - journal: "Theoretical Criminology"
+        url: "https://journals.sagepub.com/doi/10.1177/13624806241300283"
+      - journal: "Library Journal"
+        url: "https://www.libraryjournal.com/review/the-danger-imperative-violence-death-and-the-soul-of-policing-2212693"
+      - journal: "Criminal Law and Criminal Justice Book Review"
+        url: "https://clcjbooks.rutgers.edu/books/the-danger-imperative/"
+      - journal: "Journal of Policing, Intelligence, and Counter Terrorism"
+        url: "https://www.tandfonline.com/doi/full/10.1080/18335330.2025.2485158?src=exp-la"
+      - journal: "Journal of Applied Social Science"
+        url: "https://journals.sagepub.com/doi/10.1177/19367244251342775"
 
 - category: article
   id: 2
@@ -195,7 +218,7 @@
   pages: "19894–19898"
   doi: "10.1073/pnas.1910157116"
   url: "https://doi.org/10.1073/pnas.1910157116"
-  notes: "Science Editor's Choice, October 2019"
+  notes: '"Science" Editor''s Choice, October 2019'
   tags: [policing, legitimacy, field-experiment, race]
   abstract: |
     Despite decades of declining crime rates, longstanding tensions between police and the public continue to frustrate the formation of cooperative relationships necessary for the function of the police and the provision of public safety. In response, policy makers continue to promote community-oriented policing (COP) and its emphasis on positive, nonenforcement contact with the public as an effective strategy for enhancing public trust and police legitimacy. Prior research designs, however, have not leveraged the random assignment of police–public contact to identify the causal effect of such interactions on individual-level attitudes toward the police. Here, we report on a randomized field experiment conducted in New Haven, CT, that sheds light on this question and identifies the individual-level consequences of positive, nonenforcement contact between police and the public. Findings indicate that a single instance of positive contact with a uniformed police officer can substantially improve public attitudes toward police, including legitimacy and willingness to cooperate. These effects persisted for up to 21 days and were not limited to individuals inclined to trust and cooperate with the police prior to the intervention. This study demonstrates that positive nonenforcement contact can improve public attitudes toward police and suggests that police departments would benefit from an increased focus on strategies that promote positive police–public interactions.
@@ -328,7 +351,6 @@
   date: "2025-10"
   title: "The Green Beret Who Couldn't Shoot Straight"
   outlet: "Texas Monthly"
-  notes: "Cover story; 10,400 words"
   url: "https://www.texasmonthly.com/news-politics/tim-kennedy-manosphere-mma-green-beret/"
 
 - category: op_ed
