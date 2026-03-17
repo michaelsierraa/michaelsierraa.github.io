@@ -92,6 +92,7 @@ enabled = false
 
 [params.favicons]
 source = "icons/favicon.png"
+manifest = "/site.webmanifest"
 
 [params.colorTheme.selector.disable]
 footer      = false
