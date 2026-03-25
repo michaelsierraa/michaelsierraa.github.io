@@ -3,9 +3,9 @@
 <section class="section research-page">
   <div class="container py-5">
 
-    <h1 class="mb-4 d-flex align-items-center gap-2">
+    <h1 class="mb-4 d-flex align-items-start gap-2">
       {{ with $data.icon_paths }}
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="{{ $data.icon_viewbox | default "0 0 16 16" }}" fill="currentColor" aria-hidden="true">{{ . | safeHTML }}</svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="{{ $data.icon_viewbox | default "0 0 16 16" }}" fill="currentColor" aria-hidden="true" style="flex-shrink:0;margin-top:0.15em">{{ . | safeHTML }}</svg>
       {{ end }}
       {{ .Title }}
     </h1>
