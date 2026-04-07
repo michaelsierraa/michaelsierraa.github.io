@@ -37,6 +37,8 @@
         url: "https://www.tandfonline.com/doi/full/10.1080/18335330.2025.2485158?src=exp-la"
       - journal: "Journal of Applied Social Science"
         url: "https://journals.sagepub.com/doi/10.1177/19367244251342775"
+      - journal: "Criminal Justice Ethics"
+        url: "https://doi.org/10.1080/0731129X.2026.2644078"
 
 - category: article
   id: 2
@@ -267,6 +269,16 @@
   tags: [gun-violence, race, legitimacy, gangs, regression]
   abstract: |
     Most American gun owners report having their firearms for protection. However, these national estimates are likely to undersample residents of marginalized urban communities where rates of violent victimization, and presumably the need for personal protection, are more pronounced. Further, this undersampling limits our understanding of motivations for gun ownership within the "hidden" group of active criminal offenders that are more likely to be both victims and offenders of street crime. Drawing on past work linking neighborhood violence to legal cynicism, and using data gathered by the Chicago Gun Project (CGP), I employ measures of police legitimacy to explore the effect of distrust of legal agents on protective gun ownership among active offenders in Chicago. These data confirm that lower levels of police legitimacy are significantly related to a higher probability of acquiring a firearm for protection. I consider the ways that gang membership, legal changes in Chicago, and gun behaviors are related to protective gun ownership, as well as how community policing and procedural justice can improve perceptions of police and enhance their legitimacy, potentially reducing the incentives to engage in violent, extralegal "self-help" with a firearm.
+
+- category: conference_paper
+  id: 49
+  project: everyday-respect
+  authors: "Golazizian, P., Rahmati, E., Trager, J., Sourati, Z., Ghazizadeh, N., Chochlakis, G., Alcocer, J., Bennett, K., Devnani, A. V., Hejabi, P., Muttram, H. G., Padte, A. K., Saadatinia, M., Wu, C., Ziabari, A. S., Sierra-Arévalo, M., Weller, N., Narayanan, S., Graham, B. A. T., & Dehghani, M."
+  year: 2026
+  title: "The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage"
+  journal: "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics, San Diego, CA"
+  url: "https://arxiv.org/abs/2602.10339"
+  tags: [policing, artificial-intelligence, machine-learning, body-worn-cameras, methods, traffic-stops, everyday-respect]
 
 - category: working_paper
   id: 17
