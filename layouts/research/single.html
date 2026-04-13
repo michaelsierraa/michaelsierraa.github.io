@@ -90,7 +90,7 @@
     {{ end }}
 
     {{/* ── Published Papers (project field in publications.yaml) ── */}}
-    {{- $paperItems := where (where site.Data.publications "project" $.Params.project_id) "category" "article" -}}
+    {{- $paperItems := where (where site.Data.publications "project" $.Params.project_id) "category" "in" (slice "article" "conference_paper") -}}
     {{- $paperItems = sort $paperItems "year" "desc" -}}
     {{ if $paperItems }}
     <div class="mb-5">

@@ -190,10 +190,14 @@ name   = "Media"
 URL    = "/media"
 weight = 5
 [[languages.en.menus.header]]
+name   = "CV"
+URL    = "/files/cv.pdf"
+weight = 6
+[[languages.en.menus.header]]
 pre    = "email"
 name   = "Contact"
 URL    = "#contact"
-weight = 6
+weight = 7
 
 [[languages.en.menus.footer]]
 name   = "About"
