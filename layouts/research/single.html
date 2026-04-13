@@ -43,17 +43,21 @@
     </div>
     {{ end }}
 
-    {{/* ── Working Papers (project field in publications.yaml) ── */}}
-    {{- $wpItems := where (where site.Data.publications "project" $.Params.project_id) "category" "working_paper" -}}
-    {{- $wpItems = sort $wpItems "id" "desc" -}}
-    {{ if $wpItems }}
+    {{/* ── Papers: working papers + published articles + conference papers ── */}}
+    {{- $projectPubs := where site.Data.publications "project" $.Params.project_id -}}
+    {{- $wpItems     := where $projectPubs "category" "working_paper" -}}
+    {{- $artItems    := where $projectPubs "category" "article" -}}
+    {{- $confItems   := where $projectPubs "category" "conference_paper" -}}
+    {{- $allPapers   := $wpItems | append $artItems | append $confItems -}}
+    {{- $allPapers    = sort $allPapers "id" "desc" -}}
+    {{ if $allPapers }}
     <div class="mb-5">
       <h2 class="mb-3 d-flex align-items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/><path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/></svg>
         Papers
       </h2>
 
-      {{- $allTags := partial "collect-tags.html" $wpItems -}}
+      {{- $allTags := partial "collect-tags.html" $allPapers -}}
 
       <div class="row">
         <div class="col-12 col-md-3 col-lg-2">
@@ -82,53 +86,7 @@
 
         <div class="col-12 col-md-9 col-lg-10">
           <ul class="pub-list list-unstyled" data-filter-list data-no-url>
-            {{ range $wpItems }}{{ partial "pub-list-item.html" . }}{{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-    {{ end }}
-
-    {{/* ── Published Papers (project field in publications.yaml) ── */}}
-    {{- $paperItems := where (where site.Data.publications "project" $.Params.project_id) "category" "in" (slice "article" "conference_paper") -}}
-    {{- $paperItems = sort $paperItems "year" "desc" -}}
-    {{ if $paperItems }}
-    <div class="mb-5">
-      <h2 class="mb-3 d-flex align-items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/><path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/></svg>
-        Papers
-      </h2>
-
-      {{- $allPaperTags := partial "collect-tags.html" $paperItems -}}
-
-      <div class="row">
-        <div class="col-12 col-md-3 col-lg-2">
-          <button class="writing-filter-toggle btn w-100 d-md-none mb-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#research-filter-panel-papers"
-                  aria-expanded="false"
-                  aria-controls="research-filter-panel-papers">
-            Filter ▾
-          </button>
-          <div class="collapse d-md-block" id="research-filter-panel-papers">
-            <div class="writing-sidebar">
-              <div class="sidebar-label" data-bs-toggle="collapse" data-bs-target="#sidebar-topic-papers" aria-expanded="false" aria-controls="sidebar-topic-papers">Topic</div>
-              <div class="collapse" id="sidebar-topic-papers">
-                <ul class="list-unstyled sidebar-tag-list">
-                  <li><button class="filter-pill active" data-tag="">All</button></li>
-                  {{ range $allPaperTags }}
-                  <li><button class="filter-pill" data-tag="{{ . }}">{{ replace . "-" " " }}</button></li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-9 col-lg-10">
-          <ul class="pub-list list-unstyled" data-filter-list data-no-url>
-            {{ range $paperItems }}{{ partial "pub-list-item.html" . }}{{ end }}
+            {{ range $allPapers }}{{ partial "pub-list-item.html" . }}{{ end }}
           </ul>
         </div>
       </div>

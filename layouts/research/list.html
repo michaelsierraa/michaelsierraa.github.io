@@ -9,9 +9,9 @@
     {{ $pubs := site.Data.publications }}
     {{ $projects := site.Data.project_cards }}
 
-    {{ $categories := slice
-      (dict "keys" (slice "article" "conference_paper") "label" "Papers" "id" "tab-articles")
-    }}
+    {{- $paperItems := where $pubs "category" "article" -}}
+    {{- $paperItems = $paperItems | append (where $pubs "category" "conference_paper") -}}
+    {{- $paperItems = sort $paperItems "year" "desc" -}}
 
     <ul class="nav nav-tabs mb-4" id="researchTabs" role="tablist">
       {{/* Current Projects tab — always first */}}
@@ -26,21 +26,18 @@
           Current Projects
         </button>
       </li>
-      {{ range $categories }}
-        {{ $items := where $pubs "category" "in" .keys }}
-        {{ if $items }}
-        <li class="nav-item" role="presentation">
-          <button class="nav-link"
-                  id="{{ .id }}-btn"
-                  data-bs-toggle="tab"
-                  data-bs-target="#{{ .id }}"
-                  type="button" role="tab"
-                  aria-controls="{{ .id }}"
-                  aria-selected="false">
-            {{ .label }}
-          </button>
-        </li>
-        {{ end }}
+      {{ if $paperItems }}
+      <li class="nav-item" role="presentation">
+        <button class="nav-link"
+                id="tab-articles-btn"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-articles"
+                type="button" role="tab"
+                aria-controls="tab-articles"
+                aria-selected="false">
+          Papers
+        </button>
+      </li>
       {{ end }}
     </ul>
 
@@ -75,50 +72,48 @@
         </div>
       </div>
 
-      {{ range $categories }}
-        {{ $items := where $pubs "category" "in" .keys }}
-        {{ if $items }}
-        <div class="tab-pane fade"
-             id="{{ .id }}" role="tabpanel" aria-labelledby="{{ .id }}-btn">
+      {{/* Papers tab pane */}}
+      {{ if $paperItems }}
+      <div class="tab-pane fade"
+           id="tab-articles" role="tabpanel" aria-labelledby="tab-articles-btn">
 
-          {{- $allTags := partial "collect-tags.html" $items -}}
+        {{- $allTags := partial "collect-tags.html" $paperItems -}}
 
-          <div class="row">
-            {{/* Sidebar */}}
-            <div class="col-12 col-md-3 col-lg-2">
-              <button class="writing-filter-toggle btn w-100 d-md-none mb-3"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#research-filter-panel"
-                      aria-expanded="false"
-                      aria-controls="research-filter-panel">
-                Filter ▾
-              </button>
-              <div class="collapse d-md-block" id="research-filter-panel">
-                <div class="writing-sidebar">
-                  <div class="sidebar-label" data-bs-toggle="collapse" data-bs-target="#sidebar-topic-research" aria-expanded="false" aria-controls="sidebar-topic-research">Topic</div>
-                  <div class="collapse" id="sidebar-topic-research">
-                    <ul class="list-unstyled sidebar-tag-list">
-                      <li><button class="filter-pill active" data-tag="">All</button></li>
-                      {{ range $allTags }}
-                      <li><button class="filter-pill" data-tag="{{ . }}">{{ replace . "-" " " }}</button></li>
-                      {{ end }}
-                    </ul>
-                  </div>
+        <div class="row">
+          {{/* Sidebar */}}
+          <div class="col-12 col-md-3 col-lg-2">
+            <button class="writing-filter-toggle btn w-100 d-md-none mb-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#research-filter-panel"
+                    aria-expanded="false"
+                    aria-controls="research-filter-panel">
+              Filter ▾
+            </button>
+            <div class="collapse d-md-block" id="research-filter-panel">
+              <div class="writing-sidebar">
+                <div class="sidebar-label" data-bs-toggle="collapse" data-bs-target="#sidebar-topic-research" aria-expanded="false" aria-controls="sidebar-topic-research">Topic</div>
+                <div class="collapse" id="sidebar-topic-research">
+                  <ul class="list-unstyled sidebar-tag-list">
+                    <li><button class="filter-pill active" data-tag="">All</button></li>
+                    {{ range $allTags }}
+                    <li><button class="filter-pill" data-tag="{{ . }}">{{ replace . "-" " " }}</button></li>
+                    {{ end }}
+                  </ul>
                 </div>
               </div>
             </div>
-
-            {{/* Article list */}}
-            <div class="col-12 col-md-9 col-lg-10">
-              <ul class="pub-list list-unstyled" data-filter-list data-no-url>
-                {{ range $items }}{{ partial "pub-list-item.html" . }}{{ end }}
-              </ul>
-            </div>
           </div>
 
+          {{/* Article list */}}
+          <div class="col-12 col-md-9 col-lg-10">
+            <ul class="pub-list list-unstyled" data-filter-list data-no-url>
+              {{ range $paperItems }}{{ partial "pub-list-item.html" . }}{{ end }}
+            </ul>
+          </div>
         </div>
-        {{ end }}
+
+      </div>
       {{ end }}
     </div>
 
