@@ -288,7 +288,7 @@
   year: null
   title: "Police as Policymakers: How Experiences with Policy Implementation Shape Policy Representation"
   url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5766842"
-  tags: [policing, survey, topic-modeling, interviews, political-representation, race]
+  tags: [policing, survey, topic-modeling, interviews, political-representation, race, everyday-respect]
   abstract: |
     Studies of political representation tend to focus on public preferences and either legislative policy or the actions of elected officials. Alignment between public opinion and de jure policy is a key element of democratic politics. However, policy implementation determines de facto policy as experienced by the public. We combine survey and interview data about preferences and experiences with police traffic stops in Los Angeles, CA. Survey results show little variation across racial groups' reported preferences and experiences with traffic stops. However, we observe considerable variation in views of police performance. Interview data indicate that despite similar preferences regarding police treatment, minority respondents' direct and vicarious experiences with police create fear and anxiety that affect their views on present day policing. Studies of representation therefore should take account of policy implementation to understand what may be superficial correspondence between preferences and written policy.
 
@@ -299,7 +299,7 @@
   year: null
   title: "Political Control and Policing: When Do Police Comply with Police Reform?"
   url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6225738"
-  tags: [policing, policy, traffic-stops, police-misconduct, police-reform, diff-in-diff, interviews]
+  tags: [policing, policy, traffic-stops, police-misconduct, police-reform, diff-in-diff, interviews, everyday-respect]
   abstract: |
     Police wield broad discretion. They are also agents of political principals who set policy that prescribes their behavior. We develop a model of police reform and argue that successful implementation requires that either (1) officers do not resist key policy elements or (2) principals are willing to sanction non-compliant officers. We test our theory using a 2022 Los Angeles Police Department reform regarding the practice of pretextual traffic stops. Drawing on body-worn camera footage and millions of stop records, we find that officers complied with the stop documentation reforms, which were not strongly opposed. In comparison, early reductions in pretextual stops dissipated within a year. Interviews with LAPD personnel support our model's predictions that noncompliance was driven by agent resistance and a lack of expected sanctions for policy violations.
 
@@ -310,7 +310,7 @@
   year: null
   title: "A Multi-Perspective Machine Learning Approach to Evaluating Police-Driver Interaction in Los Angeles"
   url: "https://arxiv.org/abs/2402.01703"
-  tags: [policing, artificial-intelligence, machine-learning, body-worn-cameras, methods, traffic-stops]
+  tags: [policing, artificial-intelligence, machine-learning, body-worn-cameras, methods, traffic-stops, everyday-respect]
   abstract: |
     Interactions between the government officials and civilians affect public wellbeing and the state legitimacy that is necessary for the functioning of democratic society. Police officers, the most visible and contacted agents of the state, interact with the public more than 20 million times a year during traffic stops. Today, these interactions are regularly recorded by body-worn cameras (BWCs), which are lauded as a means to enhance police accountability and improve police-public interactions. However, the timely analysis of these recordings is hampered by a lack of reliable automated tools that can enable the analysis of these complex and contested police-public interactions. This article proposes an approach to developing new multi-perspective, multimodal machine learning (ML) tools to analyze the audio, video, and transcript information from this BWC footage. Our approach begins by identifying the aspects of communication most salient to different stakeholders, including both community members and police officers. We move away from modeling approaches built around the existence of a single ground truth and instead utilize new advances in soft labeling to incorporate variation in how different observers perceive the same interactions. We argue that this inclusive approach to the conceptualization and design of new ML tools is broadly applicable to the study of communication and development of analytic tools across domains of human interaction, including education, medicine, and the workplace.
 
