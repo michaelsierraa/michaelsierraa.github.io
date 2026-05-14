@@ -612,6 +612,7 @@
 
 - category: dataset
   id: 48
+  label: "Datasets and Software"
   project: pfie
   authors: "Sierra-Arévalo, M., Nix, J., Kaplun, K., Flaherty, P. T., Villarreal, J., Pham, P. P., Bach, A., & Garcia, C."
   year: 2026
