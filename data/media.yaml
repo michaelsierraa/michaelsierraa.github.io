@@ -4,8 +4,15 @@
 # ─── TELEVISION & FILM ───────────────────────────────────────────────────────
 
 - category: tv_film
-  id: 1
+  id: 112
   label: "Television & Film"
+  title: "Austin shooting spree renews focus on juvenile crime, despite nationwide decline"
+  outlet: "CBS Austin"
+  date: "2026-05-19"
+  url: "https://cbsaustin.com/news/local/austin-shooting-spree-renews-focus-on-juvenile-crime-despite-nationwide-decline"
+
+- category: tv_film
+  id: 1
   title: "Trigger Points: Guns, Policing, and the Global Reach of Violence"
   outlet: "C-SPAN"
   date: "2024-11-17"
