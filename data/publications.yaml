@@ -44,8 +44,7 @@
   id: 2
   label: "Peer-Reviewed Journal Articles"
   authors: "Chillar, V. F., Lubell, M., Kaplun, K., & Sierra-Arévalo, M."
-  year: null
-  status: "forthcoming"
+  year: 2026
   title: "The police-industrial complex: police vendors at the International Association of Chiefs of Police (IACP) Annual Conference, 2012–2018"
   journal: "Police Practice and Research"
   doi: "10.1080/15614263.2025.2606822"
@@ -280,12 +279,14 @@
   url: "https://arxiv.org/abs/2602.10339"
   tags: [policing, artificial-intelligence, machine-learning, body-worn-cameras, methods, traffic-stops, everyday-respect]
 
-- category: working_paper
+- category: article
   id: 17
   project: everyday-respect
   label: "Working Papers"
   authors: "Sierra-Arévalo, M., Alcocer, J., Brown, L., Delerme, R., Friedman, B., Graham, B. A. T., Muttram, H., Traeger, J., & Weller, N."
   year: null
+  status: "forthcoming"
+  journal: "Political Research Quarterly"
   title: "Police as Policymakers: How Experiences with Policy Implementation Shape Policy Representation"
   url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5766842"
   tags: [policing, survey, topic-modeling, interviews, political-representation, race]
