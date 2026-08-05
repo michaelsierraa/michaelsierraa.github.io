@@ -4,6 +4,20 @@
 # ─── TELEVISION & FILM ───────────────────────────────────────────────────────
 
 - category: tv_film
+  id: 113
+  title: "Footage shows Northside ISD officer shoot woman outside packed football stadium"
+  outlet: "ABC KSAT12"
+  date: "2026-08-04"
+  url: "https://www.ksat.com/news/local/2026/07/23/footage-shows-nisd-officer-shot-woman-outside-packed-football-stadium/"
+
+- category: tv_film
+  id: 114
+  title: "Police: 17-year-old had water bottle, not gun, in fatal Austin officer shooting"
+  outlet: "CBS Austin"
+  date: "2026-07-24"
+  url: "https://cbsaustin.com/news/local/police-17-year-old-had-water-bottle-not-gun-in-fatal-austin-officer-shooting"
+
+- category: tv_film
   id: 112
   label: "Television & Film"
   title: "Austin shooting spree renews focus on juvenile crime, despite nationwide decline"
