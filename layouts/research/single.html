@@ -45,11 +45,26 @@
 
     {{/* ── Papers: working papers + published articles + conference papers ── */}}
     {{- $projectPubs := where site.Data.publications "project" $.Params.project_id -}}
-    {{- $wpItems     := where $projectPubs "category" "working_paper" -}}
-    {{- $artItems    := where $projectPubs "category" "article" -}}
-    {{- $confItems   := where $projectPubs "category" "conference_paper" -}}
-    {{- $allPapers   := $wpItems | append $artItems | append $confItems -}}
-    {{- $allPapers    = sort $allPapers "id" "desc" -}}
+    {{- $paperItems  := where $projectPubs "category" "article" -}}
+    {{- $paperItems   = $paperItems | append (where $projectPubs "category" "conference_paper") -}}
+    {{/* Lifecycle order: forthcoming, then published (year desc), then working papers (id desc) */}}
+    {{- $forthcoming := slice -}}
+    {{- $published   := slice -}}
+    {{- $working     := slice -}}
+    {{- range $paperItems -}}
+      {{- $status := default "published" .status -}}
+      {{- if eq $status "forthcoming" -}}
+        {{- $forthcoming = $forthcoming | append . -}}
+      {{- else if eq $status "working" -}}
+        {{- $working = $working | append . -}}
+      {{- else -}}
+        {{- $published = $published | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $allPapers := slice -}}
+    {{- with $forthcoming }}{{ $allPapers = $allPapers | append (sort . "id" "desc") }}{{ end -}}
+    {{- with $published   }}{{ $allPapers = $allPapers | append (sort (sort . "id" "desc") "year" "desc") }}{{ end -}}
+    {{- with $working     }}{{ $allPapers = $allPapers | append (sort . "id" "desc") }}{{ end -}}
     {{ if $allPapers }}
     <div class="mb-5">
       <h2 class="mb-3 d-flex align-items-center gap-2">

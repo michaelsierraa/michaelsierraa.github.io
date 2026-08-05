@@ -42,6 +42,7 @@
 
 - category: article
   id: 2
+  status: published
   label: "Peer-Reviewed Journal Articles"
   authors: "Chillar, V. F., Lubell, M., Kaplun, K., & Sierra-Arévalo, M."
   year: 2026
@@ -55,6 +56,7 @@
 
 - category: article
   id: 3
+  status: published
   authors: "Semenza, D. C., Berryessa, C. M., & Sierra-Arévalo, M."
   year: 2025
   title: "Depictions of Firearm Violence Perpetrators and Support for Firearm Policies: An Experimental Survey Analysis of Mental Illness and Criminal Background"
@@ -70,6 +72,7 @@
 
 - category: article
   id: 4
+  status: published
   project: pfie
   authors: "Sierra-Arévalo, M., Nix, J., & Mourtgos, S. M."
   year: 2023
@@ -86,6 +89,7 @@
 
 - category: article
   id: 5
+  status: published
   authors: "Berryessa, C. M., Sierra-Arévalo, M., & Semenza, D. C."
   year: 2023
   title: "Portrayals of gun violence victimization and public support for firearm policies: An experimental analysis"
@@ -101,6 +105,7 @@
 
 - category: article
   id: 6
+  status: published
   project: pfie
   authors: "Sierra-Arévalo, M., Nix, J., & O'Guinn, B."
   year: 2022
@@ -117,6 +122,7 @@
 
 - category: article
   id: 7
+  status: published
   authors: "Haas, N., Haenschen, K., Kumar, T., Panagopoulos, C., Peyton, K., Ravanilla, N., & Sierra-Arévalo, M."
   year: 2022
   title: "Organizational Identity and Positionality in Randomized Control Trials: Considerations and Advice for Collaborative Research Teams"
@@ -132,6 +138,7 @@
 
 - category: article
   id: 8
+  status: published
   authors: "Sierra-Arévalo, M., & Papachristos, A."
   year: 2021
   title: "Bad apples and incredible certitude"
@@ -147,6 +154,7 @@
 
 - category: article
   id: 9
+  status: published
   authors: "Sierra-Arévalo, M."
   year: 2021
   title: "American Policing and the Danger Imperative"
@@ -163,6 +171,7 @@
 
 - category: article
   id: 10
+  status: published
   project: pfie
   authors: "Sierra-Arévalo, M., & Nix, J."
   year: 2020
@@ -179,6 +188,7 @@
 
 - category: article
   id: 11
+  status: published
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "The commemoration of death, organizational memory, and police culture"
@@ -194,6 +204,7 @@
 
 - category: article
   id: 12
+  status: published
   authors: "Sierra-Arévalo, M."
   year: 2019
   title: "Technological Innovation and Police Officers' Understanding and Use of Force"
@@ -210,6 +221,7 @@
 
 - category: article
   id: 13
+  status: published
   authors: "Peyton, K., Sierra-Arévalo, M., & Rand, D. G."
   year: 2019
   title: "A field experiment on community policing and police legitimacy"
@@ -226,6 +238,7 @@
 
 - category: article
   id: 14
+  status: published
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2017
   title: "Social Networks and Gang Violence Reduction"
@@ -241,6 +254,7 @@
 
 - category: article
   id: 15
+  status: published
   authors: "Sierra-Arévalo, M., Charette, Y., & Papachristos, A. V."
   year: 2017
   title: "Evaluating the Effect of Project Longevity on Group-Involved Shootings and Homicides in New Haven, Connecticut"
@@ -256,6 +270,7 @@
 
 - category: article
   id: 16
+  status: published
   authors: "Sierra-Arévalo, M."
   year: 2016
   title: "Legal cynicism and protective gun ownership among active offenders in Chicago"
@@ -271,6 +286,7 @@
 
 - category: conference_paper
   id: 49
+  status: published
   project: everyday-respect
   authors: "Golazizian, P., Rahmati, E., Trager, J., Sourati, Z., Ghazizadeh, N., Chochlakis, G., Alcocer, J., Bennett, K., Devnani, A. V., Hejabi, P., Muttram, H. G., Padte, A. K., Saadatinia, M., Wu, C., Ziabari, A. S., Sierra-Arévalo, M., Weller, N., Narayanan, S., Graham, B. A. T., & Dehghani, M."
   year: 2026
@@ -293,8 +309,9 @@
   abstract: |
     Studies of political representation tend to focus on public preferences and either legislative policy or the actions of elected officials. Alignment between public opinion and de jure policy is a key element of democratic politics. However, policy implementation determines de facto policy as experienced by the public. We combine survey and interview data about preferences and experiences with police traffic stops in Los Angeles, CA. Survey results show little variation across racial groups' reported preferences and experiences with traffic stops. However, we observe considerable variation in views of police performance. Interview data indicate that despite similar preferences regarding police treatment, minority respondents' direct and vicarious experiences with police create fear and anxiety that affect their views on present day policing. Studies of representation therefore should take account of policy implementation to understand what may be superficial correspondence between preferences and written policy.
 
-- category: working_paper
+- category: article
   id: 18
+  status: working
   project: everyday-respect
   authors: "Weller, N., Graham, B. A. T., Sierra-Arévalo, M., Brown, L., Alcocer, J., & Muttram, H."
   year: null
@@ -304,8 +321,9 @@
   abstract: |
     Police wield broad discretion. They are also agents of political principals who set policy that prescribes their behavior. We develop a model of police reform and argue that successful implementation requires that either (1) officers do not resist key policy elements or (2) principals are willing to sanction non-compliant officers. We test our theory using a 2022 Los Angeles Police Department reform regarding the practice of pretextual traffic stops. Drawing on body-worn camera footage and millions of stop records, we find that officers complied with the stop documentation reforms, which were not strongly opposed. In comparison, early reductions in pretextual stops dissipated within a year. Interviews with LAPD personnel support our model's predictions that noncompliance was driven by agent resistance and a lack of expected sanctions for policy violations.
 
-- category: working_paper
+- category: article
   id: 19
+  status: working
   project: everyday-respect
   authors: "Graham, B. A. T., Brown, L., Chochlakis, G., Dehghani, M., Delerme, R., Friedman, B., Graeden, E., Golazizian, P., Hebbar, R., Hejabi, P., Kommineni, A., Salinas, M., Sierra-Arévalo, M., Trager, J., Weller, N., & Narayanan, S."
   year: null
@@ -317,6 +335,7 @@
 
 - category: chapter
   id: 20
+  status: published
   label: "Edited Book Chapters"
   authors: "Bussey, T. P., Nix, J., & Sierra-Arévalo, M."
   year: 2025
@@ -328,6 +347,7 @@
 
 - category: chapter
   id: 21
+  status: published
   authors: "Sierra-Arévalo, M."
   year: 2021
   title: "Reward and 'Real' Police Work"
@@ -338,6 +358,7 @@
 
 - category: chapter
   id: 22
+  status: published
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2015
   title: "Social Network Analysis and Gangs"
@@ -348,6 +369,7 @@
 
 - category: chapter
   id: 23
+  status: published
   authors: "Sierra-Arévalo, M., & Papachristos, A. V."
   year: 2015
   title: "Applying Group Audits to Problem-Oriented Policing"

@@ -11,7 +11,20 @@
 
     {{- $paperItems := where $pubs "category" "article" -}}
     {{- $paperItems = $paperItems | append (where $pubs "category" "conference_paper") -}}
-    {{- $paperItems = sort $paperItems "year" "desc" -}}
+    {{/* Lifecycle order: forthcoming first, then published (year desc). Working papers are not listed here. */}}
+    {{- $forthcoming := slice -}}
+    {{- $published   := slice -}}
+    {{- range $paperItems -}}
+      {{- $status := default "published" .status -}}
+      {{- if eq $status "forthcoming" -}}
+        {{- $forthcoming = $forthcoming | append . -}}
+      {{- else if ne $status "working" -}}
+        {{- $published = $published | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $paperItems = slice -}}
+    {{- with $forthcoming }}{{ $paperItems = $paperItems | append (sort . "id" "desc") }}{{ end -}}
+    {{- with $published   }}{{ $paperItems = $paperItems | append (sort (sort . "id" "desc") "year" "desc") }}{{ end -}}
 
     <ul class="nav nav-tabs mb-4" id="researchTabs" role="tablist">
       {{/* Current Projects tab — always first */}}

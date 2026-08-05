@@ -2,7 +2,7 @@
 {{- $itemTags := $item.tags | default slice -}}
 <li class="pub-item mb-3 pb-3 border-bottom" data-tags="{{ delimit $itemTags " " }}">
   <p class="mb-1">
-    {{ if eq $item.category "working_paper" -}}
+    {{ if or (eq (default "published" $item.status) "working") (eq $item.category "working_paper") -}}
       {{ $item.authors }} (Working Paper).
       {{ if $item.url }}<a href="{{ $item.url }}" target="_blank" rel="noopener noreferrer">{{ $item.title }}</a>{{ else }}{{ $item.title }}{{ end }}{{ if not (or (strings.HasSuffix $item.title "?") (strings.HasSuffix $item.title "!") (strings.HasSuffix $item.title ".")) }}.{{ end }}
     {{- else -}}
