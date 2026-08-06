@@ -1,6 +1,6 @@
 baseURL = "https://www.sierraarevalo.com/"
 title = "Michael Sierra-Arévalo"
-languageCode = "en"
+locale = "en"
 
 [pagination]
 pagerSize = 5
@@ -165,8 +165,8 @@ enableRobotsTXT = true
 [languages]
 [languages.en]
 disabled      = false
-languageCode  = "en"
-languageName  = "English"
+locale        = "en"
+label         = "English"
 weight        = 0
 
 [[languages.en.menus.header]]
