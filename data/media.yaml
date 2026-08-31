@@ -262,6 +262,13 @@
 # ─── PRESS INTERVIEWS ────────────────────────────────────────────────────────
 
 - category: press
+  id: 115
+  title: "What Happened To Anthoneil Williams II?"
+  outlet: "Decibel (Austin PBS)"
+  date: "2026-08-24"
+  url: "https://decibelatx.org/politics/what-happened-to-anthoneil-williams-ii/"
+
+- category: press
   id: 34
   label: "Press"
   title: "How a DHS shooting of a third U.S. citizen went unnoticed for months"
