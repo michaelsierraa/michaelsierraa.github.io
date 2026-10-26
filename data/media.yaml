@@ -262,20 +262,6 @@
 # ─── PRESS INTERVIEWS ────────────────────────────────────────────────────────
 
 - category: press
-  id: 116
-  title: "Texas lawmakers discuss prediction apps, possible future legislation"
-  outlet: "The Daily Texan"
-  date: "2026-09-28"
-  url: "https://thedailytexan.com/2026/09/28/texas-lawmakers-discuss-prediction-apps-possible-future-legislation/"
-
-- category: press
-  id: 115
-  title: "What Happened To Anthoneil Williams II?"
-  outlet: "Decibel (Austin PBS)"
-  date: "2026-08-24"
-  url: "https://decibelatx.org/politics/what-happened-to-anthoneil-williams-ii/"
-
-- category: press
   id: 34
   label: "Press"
   title: "How a DHS shooting of a third U.S. citizen went unnoticed for months"
@@ -503,9 +489,9 @@
 - category: press
   id: 66
   title: "Texas gun permit applications peaked in 2020, plummeted in 2021"
-  outlet: "San Antonio Express-News"
-  date: "2022-01-21"
-  url: "https://www.expressnews.com/news/legislature/article/Texas-gun-permit-applications-peaked-in-2020-16791783.php"
+  outlet: "Houston Chronicle"
+  date: "2022-01-01"
+  url: "https://www.houstonchronicle.com/politics/texas/article/Texas-gun-permit-applications-peaked-in-2020-16793405.php"
 
 - category: press
   id: 67
