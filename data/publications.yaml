@@ -311,7 +311,7 @@
 
 - category: article
   id: 18
-  status: working
+  status: revise-resubmit
   project: everyday-respect
   authors: "Weller, N., Graham, B. A. T., Sierra-Arévalo, M., Brown, L., Alcocer, J., & Muttram, H."
   year: null
@@ -323,7 +323,7 @@
 
 - category: article
   id: 19
-  status: working
+  status: revise-resubmit
   project: everyday-respect
   authors: "Graham, B. A. T., Brown, L., Chochlakis, G., Dehghani, M., Delerme, R., Friedman, B., Graeden, E., Golazizian, P., Hebbar, R., Hejabi, P., Kommineni, A., Salinas, M., Sierra-Arévalo, M., Trager, J., Weller, N., & Narayanan, S."
   year: null
@@ -380,7 +380,7 @@
 
 - category: journalism
   id: 24
-  label: "Journalism"
+  label: "Investigative Journalism"
   authors: "Sierra-Arévalo, M."
   year: 2025
   date: "2025-10"
@@ -522,6 +522,17 @@
   url: "https://doi.org/10.1093/OBO/9780199756384-0213"
 
 - category: book_review
+  id: 50
+  authors: "Sierra-Arévalo, M."
+  year: 2026
+  title: "Review of Law and Order Leviathan: America's Extraordinary Regime of Policing and Punishment, by David Garland"
+  journal: "Contemporary Sociology"
+  volume: 55
+  issue: 6
+  doi: "10.1177/00943061261489689n"
+  url: "https://doi.org/10.1177/00943061261489689n"
+
+- category: book_review
   id: 38
   label: "Book Reviews"
   authors: "Sierra-Arévalo, M."
@@ -643,3 +654,10 @@
   publisher: "OSF"
   doi: "10.17605/OSF.IO/6X2RP"
   url: "https://doi.org/10.17605/OSF.IO/6X2RP"
+
+- category: article
+  id: 49
+  status: under-review
+  authors: "Sierra-Arévalo, M. & Peyton, K."
+  year: null
+  title: "Online Sports Betting and Problem Gambling Indicators Among US College Students"
