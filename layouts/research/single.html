@@ -34,8 +34,9 @@
     <div class="project-buttons d-flex flex-wrap gap-2 mb-5">
       {{ range . }}
       {{ if .url }}
+      {{ $btn := . }}
       <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary d-inline-flex align-items-center gap-2">
-        {{ with .icon_paths }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">{{ . | safeHTML }}</svg>{{ end }}
+        {{ with .icon_paths }}<svg xmlns="http://www.w3.org/2000/svg" width="{{ $btn.icon_width | default 16 }}" height="16" fill="currentColor" viewBox="{{ $btn.icon_viewbox | default "0 0 16 16" }}" aria-hidden="true">{{ . | safeHTML }}</svg>{{ end }}
         {{ .label }}
       </a>
       {{ end }}
